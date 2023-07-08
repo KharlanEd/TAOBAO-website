@@ -5,11 +5,17 @@
 
 // const inter = Inter({ subsets: ['latin'] })
 
+import {Montserrat, Philosopher} from "@next/font/google";
+
+const montserrat = Montserrat({subsets: ["latin"], weight: "variable"});
+const philosopher = Philosopher({subsets: ["latin"], weight: "400"});
+
 export default function Home() {
   return (
     <>
-      <h1>TAOBAO</h1>
+      <h1 className={philosopher.className}>TAOBAO</h1>
       <p
+        className={montserrat.className}
         style={{
           backgroundColor: "#372948",
           width: 300,
