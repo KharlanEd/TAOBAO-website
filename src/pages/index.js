@@ -8,9 +8,18 @@
 export default function Home() {
   return (
     <>
-    
       <h1>TAOBAO</h1>
-      
+      <p
+        style={{
+          backgroundColor: "#372948",
+          width: 300,
+          color: "white",
+          padding: 20,
+          borderRadius: 8,
+        }}
+      >
+        Хочеш купувати бренди дешевше ніж в Україні? Тоді тобі точно сюди !
+      </p>
     </>
-  )
+  );
 }
