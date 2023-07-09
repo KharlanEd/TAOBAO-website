@@ -3,7 +3,7 @@ import { Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 
-export default () => {
+export const Swiper = () => {
     return (
         <Swiper
             spaceBetween={40}
