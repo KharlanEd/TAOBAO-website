@@ -14,7 +14,7 @@ export const AboutCourses = () => {
                 <li>Здійснювати оплату напряму своєю картою (visa/Mastercard)</li>
                 <li>Доставляти в Україну різними перевізниками (на курсі їх буде 6)</li>
             </ul>
-            <Swiper />
+            <Sw/>
             </section>
  )
 }
