@@ -1,4 +1,4 @@
-import Swiper from "./Swiper"
+import {Sw} from "./Swiper"
 
 
 export const AboutCourses = () => { 
