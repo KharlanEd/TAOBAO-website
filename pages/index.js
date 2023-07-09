@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import {Inter} from "next/font/google";
+import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -52,13 +52,13 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://www.figma.com/file/Z49vV6v9RYONvOXHtYoi47/Masha?type=design&node-id=23-51&mode=design&t=7fN42fQEPJT6tLPa-0"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
           >
             <h2>
-              Docs <span>-&gt;</span>
+              МАКЕТ !!!! <span>-&gt;</span>
             </h2>
             <p>
               Find in-depth information about Next.js features and&nbsp;API.
@@ -110,5 +110,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }
