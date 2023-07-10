@@ -1,42 +1,47 @@
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
+import style from '../styles/AboutCourses.module.css'
+
+import { products } from "@/data/products";
 
 export const Sw = () => {
   return (
     <Swiper
       spaceBetween={40}
       slidesPerView={2}
-      onSlideChange={() => console.log("slide change")}
-      autoplay={{delay: 3000, disableOnInteraction: false}}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}
       modules={[Autoplay]}
       effect="slide"
       centeredSlides={true}
       speed={1000}
-      style={{width: "400px", height: "400px"}}
+      style={{ width: "400px", height: "400px" }}
     >
-      <SwiperSlide
-        style={{width: "200px", height: "100px", backgroundColor: "black"}}
-      >
-        Slide 1
-      </SwiperSlide>
-      <SwiperSlide
-        style={{width: "200px", height: "100px", backgroundColor: "red"}}
-      >
-        Slide 2
-      </SwiperSlide>
-      <SwiperSlide
-        style={{width: "200px", height: "100px", backgroundColor: "green"}}
-      >
-        Slide 3
-      </SwiperSlide>
-      <SwiperSlide
-        style={{width: "200px", height: "100px", backgroundColor: "yellow"}}
-      >
-        Slide 4
-      </SwiperSlide>
+      {products.map((product) => {
+        return (
+          <SwiperSlide key={product.id}>
+            <div className={style.slide_wrapper}>
+                    <img style={{borderRadius: '24px 24px 0 0'}}
+                srcset={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
+                src={product.photo}
+                alt="d"
+              />
+                    <div className={style.slide_thumb}>
+                <ul>
+                  <li>{product.importCountry}</li>
+                  <li>{product.madeCounty}</li>
+                </ul>
+                <ul>
+                  <li>{product.importPrice}грн</li>
+                  <li>{product.madePrice}грн</li>
+                </ul>
+              </div>
+            </div>
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 };

@@ -15,6 +15,6 @@ export const AboutCourses = () => {
                 <li>Доставляти в Україну різними перевізниками (на курсі їх буде 6)</li>
             </ul>
             <Sw/>
-            </section>
+     </section>
  )
 }
