@@ -5,7 +5,7 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400;700&display=swap'); */
 
 
 
@@ -52,6 +52,7 @@ body {
 :root {
   --violet-dark: #251B37;
   --violet-medium-dark: #372948;
+  --violet-light-dark: #675082;
   --pink-dark-pink: #F16060;
   --pink-medium-pink: #FCA3A3;
   --pink-light-pink: #FFCACA;

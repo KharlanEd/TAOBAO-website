@@ -31,20 +31,27 @@ const servicesList = [
 export const ServicesSection = () => {
   return (
     <section className={styles.sectionContainer}>
-      <h2 className="services-title ">TAOBAO/1688/Pinduoduo/ WeChat</h2>
-      <strong className="block pb-8 font-sans text-title text-sm">
-        Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
-        відкрити свій магазин
-      </strong>
-      <p className="services-card-info">
+      <h2 className={styles.sectionTitle}>TAOBAO/1688/Pinduoduo/ WeChat</h2>
+      <p className={styles.sectionSloganWrap}>
+        <strong className={styles.sectionSlogan}>
+          Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
+          відкрити свій магазин
+        </strong>
+      </p>
+      <p className={styles.sectionInfo}>
         Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
       </p>
-      <strong className="block pb-8 font-heading text-title text-sm">
-        Почни свій шлях і ти Давай заощяджувати разом!
-      </strong>
+      <p className={styles.sectionSloganWrap}>
+        <strong className={styles.sectionSecondSlogan}>
+          Почни свій шлях і ти
+        </strong>
+        <strong className={styles.sectionSecondSlogan}>
+          Давай заощяджувати разом!
+        </strong>
+      </p>
 
       <Swiper
-        className="mb-1"
+        className={styles.sliderWrap}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={16}
         slidesPerView={2}
@@ -55,13 +62,14 @@ export const ServicesSection = () => {
         }}
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log("slide change")}
-        style={{width: "auto", height: "302px", marginBottom: "16px"}}
+        // style={{width: "auto", height: "302px", marginBottom: "16px"}}
       >
         {servicesList.map(({title, price, priceithFeedback, currency}, idx) => (
           <SwiperSlide
             key={idx}
-            className="-top-5"
-            style={{width: "156px", height: "252px"}}
+            className={styles.sliderSlide}
+            // className="-top-5"
+            // style={{width: "156px", height: "252px"}}
           >
             <div
               className="services-swiper-box"
@@ -71,14 +79,22 @@ export const ServicesSection = () => {
                 <h3>{title}</h3>
               </div>
 
-              <ul className="p-4 bg-gradient-to-b from-violet-dark to-violet-light-dark">
+              <ul className={styles.serviceCardSliderPriceWrap}>
                 <li>
-                  <p className="font-sans text-left">самостійне проходження</p>
-                  <p className="font-heading font-bold">{`${price} ${currency}`}</p>
+                  <p className={styles.serviceCardSliderDescr}>
+                    самостійне проходження
+                  </p>
+                  <p
+                    className={styles.serviceCardSliderPrice}
+                  >{`${price} ${currency}`}</p>
                 </li>
                 <li>
-                  <p className="font-sans text-left"> Зі зворотнім зв’язком</p>
-                  <p className="font-heading font-bold">{`${priceithFeedback} ${currency}`}</p>
+                  <p className={styles.serviceCardSliderDescr}>
+                    Зі зворотнім зв’язком
+                  </p>
+                  <p
+                    className={styles.serviceCardSliderPrice}
+                  >{`${priceithFeedback} ${currency}`}</p>
                 </li>
               </ul>
             </div>
@@ -86,13 +102,7 @@ export const ServicesSection = () => {
         ))}
       </Swiper>
 
-      <a
-        className="services-button-buy"
-        style={{
-          boxShadow: "0px 0px 21px 11px rgba(241, 96, 96, 0.50)",
-        }}
-        href="#"
-      >
+      <a className={styles.servicesBtnBuy} href="#">
         Купити
       </a>
     </section>
