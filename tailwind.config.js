@@ -13,12 +13,11 @@ module.exports = {
     },
     colors: {
       "bg-container": "#251B37",
-      "title": "#FFCACA",
+      title: "#FFCACA",
       "title-light": "#FFF",
       "button-pay": "#FCA3A3",
       "violet-light-dark": "#675082",
-     
-
+      "violet-dark": "#251B37",
     },
     boxShadow: {
       "button-pay": "0px 0px 21px 11px rgba(241, 96, 96, 0.50);",
