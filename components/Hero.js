@@ -7,15 +7,20 @@ import Image from "next/image"
      return (
          <>
         
-             <div className="w-full  bg-center bg-cover  bg-[url('/bg-mary.jpg')] " >
-                 <div className="flex items-center justify-center  " style={{
+             
+                 {/* <div className="  " style={{
                      backgroundImage: 'linear-gradient(180deg, #000 16.45%, rgba(0, 0, 0, 0.00) 100%)'
-                 }}>
-                 <h1 className=" px-10   mb-60 pt-7  text-title font-heading text-2xl font-bold text-center  " >
+             }}> */}
+             <div className="flex space-y-4 items-center justify-center flex-col ">
+                 <h1 className=" px-10 mb-3  pt-7  text-title font-heading text-2xl font-bold text-center  " >
                      Хочеш купувати бренди дешевше ніж в Україні?
                      Тоді тобі точно сюди !
                      </h1>
-                     </div>
+                 {/* <Image src="/bg-mary.jpg" alt="background" height={50} width={300} /> */}
+                 <div className="w-96 h-96 bg-center bg-cover  bg-[url('/bg-mary.jpg')]"></div>
+                 </div>
+                 
+                     {/* </div> */}
                 <div className="ml-2 mb-4" >
                     <Image src="group.svg" alt="Logo" width={128} height={64} />
                  </div>
@@ -32,7 +37,7 @@ import Image from "next/image"
                  </div>
                  
 
-             </div> 
+            
                  
                     
                     
