@@ -36,8 +36,28 @@
 
 
 }
-body{
+
+
+
+/* font-family: 'Philosopher',sans-serif; */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+
   background-color: #251B37;
+}
+
+:root {
+  --violet-dark: #251B37;
+  --violet-medium-dark: #372948;
+  --pink-dark-pink: #F16060;
+  --pink-medium-pink: #FCA3A3;
+  --pink-light-pink: #FFCACA;
+  --pink-white: #FFECEF;
+  --white: #FFFFFF;
+  --black: #000000;
 }
 
 
