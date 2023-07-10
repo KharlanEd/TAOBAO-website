@@ -21,6 +21,7 @@ module.exports = {
       "button-pay": "#FCA3A3",
       "violet-light-dark": "#675082",
       "violet-dark": "#251B37",
+
       "dark-pink": "#F16060",
     },
     boxShadow: {
