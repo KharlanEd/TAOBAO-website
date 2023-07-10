@@ -1,4 +1,4 @@
-import styled from '../styles/Hero.module.css'
+import styled from '../styles/Header.module.css'
 
 export const Header = () => {
   return (

@@ -1,0 +1,47 @@
+.heder_link {
+    position: relative;
+  display: flex;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  background: transparent;
+  
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+.svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #d563bf;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.heder_link:hover {
+  transition: 1s ease-in-out;
+ 
+  
+}
+
+.heder_link:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.heder_link span {
+  font-family: Philosopher;
+ text-align: center;
+  padding: 8px;
+    width: 100%;
+    height: 100%;
+  color: rgb(242, 233, 233);
+  font-size: 18px;
+  font-weight: 100;
+}
+.heder_link:hover span {
+    font-weight: bold;
+    transition: 1s ease-in-out;
+}
