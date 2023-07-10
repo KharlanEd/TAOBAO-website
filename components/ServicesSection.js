@@ -1,3 +1,11 @@
+import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
+import {Swiper, SwiperSlide} from "swiper/react";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 const servicesList = [
   {
     title: "Pinduoduo",
@@ -22,52 +30,55 @@ const servicesList = [
 export const ServicesSection = () => {
   return (
     <section className="py-8 text-center px-4">
-      <h2 className="text-2xl font-bold text-center text-title-light ">
-        TAOBAO / 1688 / Pinduoduo / WeChat
-      </h2>
-      <strong className="text-title text-sm">
+      <h2 className="services-title ">TAOBAO / 1688 / Pinduoduo / WeChat</h2>
+      <strong className="font-sans text-title text-sm">
         Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
         відкрити свій магазин
       </strong>
-      <p className="text-title-light py-2 px-6 bg-violet-light-dark rounded-2xl w-80">
+      <p className="services-card-info">
         Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
       </p>
-      <strong className="text-title text-sm">
+      <strong className="font-heading text-title text-sm">
         Почни свій шлях і ти Давай заощяджувати разом!
       </strong>
 
-      <ul className="text-title-light">
+      <Swiper
+        className="mb-8"
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={16}
+        slidesPerView={2}
+        pagination={{
+          clickable: true,
+        }}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
+        style={{width: "auto"}}
+      >
         {servicesList.map(({title, price, priceithFeedback, currency}, idx) => (
-          <li key={idx}>
-            <h3>{title}</h3>
-            <ul>
+          <SwiperSlide
+            key={idx}
+            className="services-swiper-box"
+            style={{width: "156px"}}
+          >
+            <div className="services-card-buy-title services-card-buy-title-after">
+              <h3>{title}</h3>
+            </div>
+
+            <ul className="p-4 bg-gradient-to-b from-violet-dark to-violet-light-dark">
               <li>
-                <p>самостійне проходження</p>
-                <p>{`${price} ${currency}`}</p>
+                <p className="font-sans">самостійне проходження</p>
+                <p className="font-heading">{`${price} ${currency}`}</p>
               </li>
               <li>
-                <p>Зі зворотнім зв’язком</p>
-                <p>{`${priceithFeedback} ${currency}`}</p>
+                <p className="font-sans"> Зі зворотнім зв’язком</p>
+                <p className="font-heading">{`${priceithFeedback} ${currency}`}</p>
               </li>
             </ul>
-          </li>
+          </SwiperSlide>
         ))}
-      </ul>
-      <ul>
-        <li>
-          <button></button>
-        </li>
-        <li>
-          <button></button>
-        </li>
-        <li>
-          <button></button>
-        </li>
-      </ul>
-      <a
-        className="w-40 h-12 bg-button-pay px-14 py-4 rounded-3xl font-bold shadow-button-pay"
-        href="#"
-      >
+      </Swiper>
+
+      <a className="services-button-buy" href="#">
         Купити
       </a>
     </section>
