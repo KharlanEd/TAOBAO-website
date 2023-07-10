@@ -30,14 +30,12 @@ const servicesList = [
 export const ServicesSection = () => {
   return (
     <section className="py-8 text-center px-4">
-      <h2 className="font-heading text-2xl font-bold text-center text-title-light ">
-        TAOBAO / 1688 / Pinduoduo / WeChat
-      </h2>
+      <h2 className="services-title ">TAOBAO / 1688 / Pinduoduo / WeChat</h2>
       <strong className="font-sans text-title text-sm">
         Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
         відкрити свій магазин
       </strong>
-      <p className="font-heading text-title-light py-2 px-6 bg-violet-light-dark rounded-2xl w-80 m-auto">
+      <p className="services-card-info">
         Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
       </p>
       <strong className="font-heading text-title text-sm">
@@ -59,21 +57,14 @@ export const ServicesSection = () => {
         {servicesList.map(({title, price, priceithFeedback, currency}, idx) => (
           <SwiperSlide
             key={idx}
-            className="text-title-light mt-6  border rounded-3xl h-40 overflow-hidden mb-8"
-            style={{width: "156px", border: "1px solid #675082"}}
+            className="services-swiper-box"
+            style={{width: "156px"}}
           >
-            <div
-              style={{alignItems: "center"}}
-              className="font-heading flex justify-center px-9 h-20 bg-violet-dark relative  after:content-[''] after:absolute after:left-0 after:-bottom-px after:bg-violet-light-dark after:w-full after:h-px after:block"
-            >
+            <div className="services-card-buy-title services-card-buy-title-after">
               <h3>{title}</h3>
             </div>
-            <ul
-              className="p-4"
-              style={{
-                background: "linear-gradient(180deg, #251B37 0%, #675082 100%)",
-              }}
-            >
+
+            <ul className="p-4 bg-gradient-to-b from-violet-dark to-violet-light-dark">
               <li>
                 <p className="font-sans">самостійне проходження</p>
                 <p className="font-heading">{`${price} ${currency}`}</p>
@@ -87,10 +78,7 @@ export const ServicesSection = () => {
         ))}
       </Swiper>
 
-      <a
-        className="font-heading w-40 h-12 bg-button-pay px-14 py-4 rounded-3xl font-bold shadow-button-pay"
-        href="#"
-      >
+      <a className="services-button-buy" href="#">
         Купити
       </a>
     </section>

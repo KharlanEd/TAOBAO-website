@@ -2,8 +2,39 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 
+.services-title {
+  @apply font-heading text-2xl font-bold text-center text-title-light
+}
+
+.services-card-info {
+  @apply font-heading text-title-light py-2 px-6 bg-violet-light-dark rounded-2xl w-80 m-auto
+}
+
+.services-swiper-box {
+  @apply text-title-light mt-6 mb-8 h-40 overflow-hidden border border-solid border-violet-light-dark border rounded-3xl
+}
+
+.services-card-buy-title {
+  @apply font-heading flex items-center justify-center px-9 py-2 h-20 bg-violet-dark relative
+}
+
+.services-button-buy {
+  @apply font-heading w-40 h-12 bg-button-pay px-14 py-4 rounded-3xl font-bold shadow-button-pay
+}
+
+@layer components {
+
+
+  .services-card-buy-title-after::after {
+    @apply content-[''] absolute left-0 -bottom-px bg-violet-light-dark w-full h-px block
+  }
+
+}
 
 /* :root {
   --max-width: 1100px;
