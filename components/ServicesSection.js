@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import styles from "../styles/Services.module.css";
 
 const servicesList = [
   {
@@ -29,7 +30,7 @@ const servicesList = [
 
 export const ServicesSection = () => {
   return (
-    <section className="pb-8 text-center px-4 ">
+    <section className={styles.sectionContainer}>
       <h2 className="services-title ">TAOBAO/1688/Pinduoduo/ WeChat</h2>
       <strong className="block pb-8 font-sans text-title text-sm">
         Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
