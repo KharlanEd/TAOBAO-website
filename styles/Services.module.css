@@ -5,13 +5,94 @@
 }
 
 .sectionTitle {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 
     font-family: 'Philosopher', sans-serif;
     font-size: 24px;
     font-weight: 700;
-
     color: var(--white);
+}
+
+.sectionSloganWrap {
+    margin-bottom: 32px;
+}
+
+.sectionSlogan {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--pink-light-pink);
+}
+
+.sectionSecondSlogan {
+    display: inline-block;
+
+    font-family: 'Philosopher', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--pink-light-pink);
+}
+
+.sectionInfo {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+    padding: 6px 10px;
+
+    background-color: var(--violet-light-dark);
+    border-radius: 16px;
+
+    font-family: 'Philosopher', sans-serif;
+    color: var(--white);
+}
+
+.sliderWrap {
+    margin-bottom: 16px;
+    width: auto;
+    height: 302px;
+}
+
+.sliderSlide {
+    margin-bottom: 32px;
+    width: 156px;
+    height: 252px;
+}
+
+.serviceCardSliderPriceWrap {
+    padding: 16px;
+
+    background: linear-gradient(180deg, #251B37 0%, #675082 100%);
+}
+
+.serviceCardSliderDescr {
+    margin-bottom: 10px;
+
+    text-align: left;
+}
+
+.serviceCardSliderPrice {
+    margin-bottom: 10px;
+
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+}
+
+.servicesBtnBuy {
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding: 15px 51px;
+    width: 156px;
+    height: 48px;
+
+
+    border-radius: 24px;
+    border: 1px solid var(--white);
+    background-color: var(--pink-medium-pink);
+    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
 }
 
 
