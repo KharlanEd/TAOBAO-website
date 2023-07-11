@@ -1,0 +1,107 @@
+.section {
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.section_btn {
+  background-color: var(--violet-medium-dark);
+  border-radius: 24px;
+
+  margin-bottom: 32px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 16px 15px 14px 56px;
+  border: 1px solid var(--white);
+  border-radius: 24px;
+
+  font-family: "Philosopher", sans-serif;
+  font-weight: 700;
+
+  color: var(--pink-light-pink);
+}
+
+.btn_list {
+  text-align: left;
+  padding: 0 15px 13px 20px;
+}
+
+.btn_list__item {
+  margin-bottom: 16px;
+}
+
+.btn_list__title {
+  color: var(--pink-dark-pink);
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 16px;
+}
+
+.list_title__first {
+  text-transform: uppercase;
+  color: var(--pink-dark-pink);
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 16px;
+}
+
+.btn_list__text {
+  color: var(--white);
+  font-size: 14px;
+}
+
+.title {
+  font-family: "Philosopher", sans-serif;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.list {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background-color: var(--pink-light-pink);
+  padding: 14px 29px 14px 17px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.list_span {
+  font-family: "Philosopher", sans-serif;
+  color: var(--pink-dark-pink);
+  font-size: 36px;
+  font-weight: 700;
+  margin-right: 23px;
+}
+
+.wrap {
+  padding: 16px;
+  border: 1px solid var(--white);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.wrap_text__margin {
+  font-size: 14px;
+  color: var(--white);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.wrap_text {
+  font-size: 14px;
+  color: var(--white);
+  text-align: left;
+}
+
+.title_text {
+  font-family: "Philosopher", sans-serif;
+  color: var(--pink-light-pink);
+}
