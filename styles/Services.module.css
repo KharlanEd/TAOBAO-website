@@ -52,11 +52,10 @@
 }
 
 .servicesliderSlide {
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     width: 156px;
     height: auto;
     height: 242px;
-    /* height: 252px; */
 }
 
 .servicesliderSlideInner {
@@ -104,8 +103,7 @@
 }
 
 .serviceCardSliderPriceWrap {
-    padding: 16px;
-    /* height: 165px; */
+    padding: 8px 16px;
 
     background: linear-gradient(180deg, #251B37 0%, #675082 100%);
 }
@@ -113,6 +111,7 @@
 .serviceCardSliderDescr {
     margin-bottom: 10px;
 
+    font-size: 14px;
     text-align: left;
 }
 
@@ -141,49 +140,3 @@
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
 }
-
-
-
-
-/* .services-title {
-    @apply pb-4 font-heading text-2xl font-bold text-center text-title-light
-}
-
-.services-card-info {
-    @apply font-heading text-title-light mb-4 py-2 px-6 bg-violet-light-dark rounded-2xl w-80 m-auto
-}
-
-.services-swiper-box {
-    @apply text-title-light mt-6 h-40 overflow-hidden border border-solid border-violet-light-dark border rounded-3xl
-}
-
-.services-card-buy-title {
-    @apply font-heading flex items-center justify-center px-9 py-2 h-20 bg-violet-dark relative
-}
-@layer components {
-    .services-card-buy-title-after::after {
-        @apply content-[''] absolute left-0 -bottom-px bg-violet-light-dark w-full h-px block
-    }
-
-.services-button-buy {
-    @apply font-heading w-40 h-12 px-14 py-4 bg-button-pay rounded-3xl font-bold
-}
-
-
-
-}
-
-body {
-    background-color: #251B37;
-}
-
-
-.swiper-pagination-bullet {
-    background-color: #675082 !important;
-    width: 16px !important;
-    height: 16px !important;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #F16060 !important;
-} */
