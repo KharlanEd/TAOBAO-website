@@ -7,7 +7,7 @@ import Image from "next/image"
      return (
          <>
             <section className={styled.section_hero}>
-                <div className={styled.bg_wraper}>
+                <div className={styled.container}>
                     <div >
                         <h1 className={styled.title}>
                              Хочеш купувати бренди дешевше ніж в Україні? Тоді тобі точно сюди !
@@ -32,10 +32,10 @@ import Image from "next/image"
                    
                     
 
-                 </div>
                  
-                   <div >
-                           <h3 className={styled.text_gradient}>Веду власну сторінку в інстаграм, де розповідаю про шопінг в Китаї та ділюсь різними фішками 
+                 
+                   <div  >
+                           <h3 className={styled.text} >Веду власну сторінку в інстаграм, де розповідаю про шопінг в Китаї та ділюсь різними фішками 
  
                          </h3>  
                          <a
@@ -43,6 +43,7 @@ import Image from "next/image"
                              target="_blank"
                              rel="noopener"
                              href="https://instagram.com/maria__yatsenko?igshid=Y2IzZGU1MTFhOQ==" >@maria__yatsenko</a>
+                     </div>
                      </div>
                     
             </section>
