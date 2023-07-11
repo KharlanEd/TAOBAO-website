@@ -30,28 +30,28 @@ const servicesList = [
 
 export const ServicesSection = () => {
   return (
-    <section className={styles.sectionContainer}>
-      <h2 className={styles.sectionTitle}>TAOBAO/1688/Pinduoduo/ WeChat</h2>
-      <p className={styles.sectionSloganWrap}>
-        <strong className={styles.sectionSlogan}>
+    <section className={styles.serviceContainer}>
+      <h2 className={styles.serviceTitle}>TAOBAO/1688/Pinduoduo/ WeChat</h2>
+      <p className={styles.serviceSloganWrap}>
+        <strong className={styles.serviceSlogan}>
           Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
           відкрити свій магазин
         </strong>
       </p>
-      <p className={styles.sectionInfo}>
+      <p className={styles.serviceInfo}>
         Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
       </p>
-      <p className={styles.sectionSloganWrap}>
-        <strong className={styles.sectionSecondSlogan}>
+      <p className={styles.serviceSloganWrap}>
+        <strong className={styles.serviceSecondSlogan}>
           Почни свій шлях і ти
         </strong>
-        <strong className={styles.sectionSecondSlogan}>
+        <strong className={styles.serviceSecondSlogan}>
           Давай заощяджувати разом!
         </strong>
       </p>
 
       <Swiper
-        className={styles.sliderWrap}
+        className={styles.servicesliderWrap}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={16}
         slidesPerView={2}
@@ -62,21 +62,12 @@ export const ServicesSection = () => {
         }}
         // onSwiper={(swiper) => console.log(swiper)}
         // onSlideChange={() => console.log("slide change")}
-        // style={{width: "auto", height: "302px", marginBottom: "16px"}}
       >
         {servicesList.map(({title, price, priceithFeedback, currency}, idx) => (
-          <SwiperSlide
-            key={idx}
-            className={styles.sliderSlide}
-            // className="-top-5"
-            // style={{width: "156px", height: "252px"}}
-          >
-            <div
-              className="services-swiper-box"
-              style={{width: "156px", height: "100%"}}
-            >
-              <div className="services-card-buy-title services-card-buy-title-after">
-                <h3>{title}</h3>
+          <SwiperSlide key={idx} className={styles.servicesliderSlide}>
+            <div className={styles.servicesliderSlideInner}>
+              <div className={styles.servicesliderSlideTitleBox}>
+                <h3 className={styles.servicesliderSlideTitle}>{title}</h3>
               </div>
 
               <ul className={styles.serviceCardSliderPriceWrap}>
