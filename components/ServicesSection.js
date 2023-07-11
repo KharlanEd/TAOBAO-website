@@ -30,7 +30,7 @@ const servicesList = [
 export const ServicesSection = () => {
   return (
     <section className={styles.serviceContainer}>
-      <h2 className={styles.serviceTitle}>TAOBAO/1688/Pinduoduo/ WeChat</h2>
+      <h2 className={styles.serviceTitle}>TAOBAO /1688/ Pinduoduo/ WeChat</h2>
       <p className={styles.serviceSloganWrap}>
         <strong className={styles.serviceSlogan}>
           Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше або
@@ -40,12 +40,14 @@ export const ServicesSection = () => {
       <p className={styles.serviceInfo}>
         Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
       </p>
-      <p className={styles.serviceSloganWrap}>
+      <p>
         <strong className={styles.serviceSecondSlogan}>
           Почни свій шлях і ти
         </strong>
+      </p>
+      <p className={styles.serviceSloganWrap}>
         <strong className={styles.serviceSecondSlogan}>
-          Давай заощяджувати разом!
+          Давай заощаджувати разом!
         </strong>
       </p>
 
@@ -91,7 +93,7 @@ export const ServicesSection = () => {
       </Swiper>
 
       <a
-        href="https://t.me/kyiv_n"
+        href="https://t.me/Maria_09_07"
         target="_blank"
         rel="noopener"
         className={styles.servicesBtnBuy}
