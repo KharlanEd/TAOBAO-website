@@ -2,8 +2,8 @@ import styled from '../styles/Header.module.css'
 
 export const Header = () => {
   return (
-    <header className="bg-gray-800  text-title-white">
-      <nav className="flex justify-between items-center p-4">
+    <header className={styled.header} >
+      <nav className={styled.nav}>
              <a className={styled.heder_link}>
         <svg width="150px" height="50px" viewBox="0 0 180 60" className={styled.svg}>
           <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
