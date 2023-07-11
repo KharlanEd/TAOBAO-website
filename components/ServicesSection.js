@@ -1,6 +1,5 @@
 import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -60,8 +59,6 @@ export const ServicesSection = () => {
         pagination={{
           clickable: true,
         }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log("slide change")}
       >
         {servicesList.map(({title, price, priceithFeedback, currency}, idx) => (
           <SwiperSlide key={idx} className={styles.servicesliderSlide}>
@@ -93,7 +90,12 @@ export const ServicesSection = () => {
         ))}
       </Swiper>
 
-      <a className={styles.servicesBtnBuy} href="#">
+      <a
+        href="https://t.me/kyiv_n"
+        target="_blank"
+        rel="noopener"
+        className={styles.servicesBtnBuy}
+      >
         Купити
       </a>
     </section>
