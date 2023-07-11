@@ -1,39 +1,109 @@
+.section_hero{
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+
 .bg_wraper{
-    background-image:  linear-gradient(180deg, #000 16.45%, rgba(0, 0, 0, 0.00) 100%), url('../public/photo_5287377961881817302_y.jpg');
+    background-image:  linear-gradient(180deg, #000 10%, rgba(0, 0, 0, 0.00) 35%), url('../public/images/product/bg-mb.jpg');
     width: 100%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-   animation: slide 10s linear infinite;
-   transform: scale(0.8);
-  background-size: 120%;
+    background-size: contain;
+  
+ 
 }
 
-@keyframes slide {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-}
+
 
 .title{
-margin-bottom: 232px;
+  padding-top: 20px;
+margin-bottom: 220px;
 font-family: Philosopher;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
 
+width: 100%;  
+height: 67px;
+
 text-align: center;
+color: var(--pink-light-pink);
 
 }
 
+.svg_container{
+  position: relative;
+  margin-left: 12px;
+  margin-bottom:10px ;
+}
+.svg{
+  position: relative;
+}
+
+.textsvg{
+   position: absolute;
+  top: 5px;
+  left: 30px;
+ 
+  color: var(--black);
+  font-family: Philosopher;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.container_text{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 16.45%, #000 100% );
+  padding-bottom: 17px
+}
 .text{
+margin-bottom: 17px;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
+text-align: center;
+
+color: var(--white);
+}
+
+.text_gradient{
+   background-image:  linear-gradient(180deg, #000 10%, rgba(0, 0, 0, 0.00) 100%);
+  margin-bottom: 17px;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+text-align: center;
+
+color: var(--white);
+}
+
+.hero_btn{
+   display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+    
+    padding: 15px 15px;
+    width: 156px;
+    height: 48px;
+
+
+    border-radius: 24px;
+    border: 1px solid var(--white);
+    background-color: var(--pink-medium-pink);
+    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    text-align: left;
 }

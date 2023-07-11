@@ -1,3 +1,13 @@
+@media (max-width: 767px) {
+  .header {
+
+  display: none;
+}
+  }
+
+
+
+
 .heder_link {
     position: relative;
   display: flex;
