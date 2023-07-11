@@ -80,3 +80,28 @@
   font-weight: 700;
   margin-right: 23px;
 }
+
+.wrap {
+  padding: 16px;
+  border: 1px solid var(--white);
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.wrap_text__margin {
+  font-size: 14px;
+  color: var(--white);
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.wrap_text {
+  font-size: 14px;
+  color: var(--white);
+  text-align: left;
+}
+
+.title_text {
+  font-family: "Philosopher", sans-serif;
+  color: var(--pink-light-pink);
+}
