@@ -17,7 +17,21 @@ export const Sw = () => {
       effect="slide"
       centeredSlides={true}
       speed={1000}
-      style={{ width: "400px", height: "400px" }}
+      style={{ width: "100%", height: "241px" }}
+      breakpoints={{
+        375: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 6,
+          spaceBetween: 80,
+        },
+      }}
     >
       {products.map((product) => {
         return (
@@ -29,11 +43,11 @@ export const Sw = () => {
                 alt="d"
               />
                     <div className={style.slide_thumb}>
-                <ul>
-                  <li>{product.importCountry}</li>
+                <ul className={style.country_list}>
+                  <li className={style.county_item}>{product.importCountry}</li>
                   <li>{product.madeCounty}</li>
                 </ul>
-                <ul>
+                <ul className={style.price_list}>
                   <li>{product.importPrice}грн</li>
                   <li>{product.madePrice}грн</li>
                 </ul>

@@ -1,13 +1,86 @@
 .slide_thumb {
-    display: flex;
-    justify-content: space-between;  
-    padding: 9px 16px 19px 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 16px 19px 16px;
 }
 
 .slide_wrapper {
-    width: 156px;
-    height: 256px;
-    border-radius: 24px;
-    /* background-color: beige; */
-    border: 1px solid #FFF;
+  width: 156px;
+  height: 241px;
+  border-radius: 24px;
+  border: 1px solid #fff;
+}
+
+/* .section { */
+  /* margin: 0, auto; */
+  /* text-align: center; */
+
+
+.title {
+  font-family: "Philosopher";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--violet-dark);
+
+  /* width: 331px; */
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.description {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.description_item::marker {
+  color: #000;
+  font-size: 8px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: var(--pink-light-pink);
+  border-radius: 24px;
+}
+
+.swiper_container {
+  padding-top: 39px;
+  padding-bottom: 24px;
+}
+
+.price_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-family: "Philosopher", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.country_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  font-family: "Montserat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.county_item {
+    margin-bottom: 3px;
 }
