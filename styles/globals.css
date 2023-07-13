@@ -13,15 +13,16 @@
   --white: #FFFFFF;
   --black: #000000;
 }
-@media (min-width: 375px){
-.container {
+
+@media (min-width: 375px) {
+  .container {
     max-width: 375px;
     margin-left: auto;
     margin-right: auto;
 
     padding-left: 16px;
     padding-right: 16px;
-}
+  }
 
 }
 
@@ -37,6 +38,10 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+
+/* .swiper-slide>div {
+  margin-right: 0 !important;
+} */
 
 .swiper-pagination-bullet {
   background-color: #675082 !important;
