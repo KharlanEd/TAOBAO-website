@@ -12,7 +12,22 @@ import {About} from "@/components/About";
 
 const inter = Inter({subsets: ["latin"]});
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const response = await fetch(`${process.env.LOCAL_HOST}/api/services`);
+  const data = await response.json();
+
+  if (!data) {
+    return {
+      notFound: true,
+    };
+  }
+
+  return {
+    props: {servicesList: data},
+  };
+};
+
+export default function Home({servicesList}) {
   return (
     <>
       <Head>
@@ -23,10 +38,10 @@ export default function Home() {
       </Head>
 
       {/* <Layout> */}
-        <Hero />
-        <ServicesSection />
-        <About />
-        <AboutCourses />
+      <Hero />
+      <ServicesSection servicesList={servicesList} />
+      <About />
+      <AboutCourses />
       {/* </Layout> */}
     </>
   );
