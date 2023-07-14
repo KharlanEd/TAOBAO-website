@@ -29,7 +29,6 @@ export const servicesList = [
     currency: "грн",
   },
 ];
-
 // export const ServicesSection = ({servicesList}) => {
 //   if (!servicesList) {
 //     return null;
