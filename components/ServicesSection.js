@@ -7,6 +7,10 @@ import "swiper/css/scrollbar";
 import styles from "../styles/Services.module.css";
 
 export const ServicesSection = ({servicesList}) => {
+  if (!servicesList) {
+    return null;
+  }
+
   return (
     <section className={styles.serviceContainer}>
       <h2 className={styles.serviceTitle}>TAOBAO /1688/ Pinduoduo/ WeChat</h2>
