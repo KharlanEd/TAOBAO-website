@@ -1,4 +1,4 @@
-export const servicesList = [
+export const services = [
   {
     id: 1,
     title: "Pinduoduo",
