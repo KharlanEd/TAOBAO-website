@@ -45,16 +45,16 @@
     color: var(--white);
 }
 
-.servicesliderWrap {
+.servicesSliderWrap {
     margin-bottom: 16px;
     width: auto;
     height: 302px;
+
 }
 
-.servicesliderSlide {
+.servicesSliderSlide {
+    margin-left: 6px;
     margin-bottom: 16px;
-    width: 156px;
-    height: auto;
     height: 242px;
 }
 
