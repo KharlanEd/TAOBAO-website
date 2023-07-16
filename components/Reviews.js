@@ -9,9 +9,9 @@ import 'swiper/css/autoplay';
 
 
 const reviews = [
-  { id: 1, photoFilename: 'Rectangle 5.jpg' },
-  { id: 2, photoFilename: 'Rectangle 6.jpg' },
-    { id: 3, photoFilename: 'Rectangle 31.jpg' },
+  { id: 1, photoFilename: 'Rectangle5.jpg' },
+  { id: 2, photoFilename: 'Rectangle6.jpg' },
+    { id: 3, photoFilename: 'Rectangle31.jpg' },
     { id: 4, photoFilename: 'Rectangle1.jpg'},
     { id: 5, photoFilename: 'Rectangle2.jpg' },
   { id: 6, photoFilename: 'Rectangle3.jpg'},
