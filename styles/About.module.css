@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
 .section_btn {
   background-color: var(--violet-medium-dark);
   border-radius: 24px;
@@ -22,6 +31,7 @@
 
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
+  background-color: var(--violet-medium-dark);
 
   color: var(--pink-light-pink);
 }

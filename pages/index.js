@@ -1,17 +1,34 @@
 import Head from "next/head";
 import Image from "next/image";
-import {Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import {AboutCourses} from "@/components/AboutCourses";
+import { AboutCourses } from "@/components/AboutCourses";
 
-import {Hero} from "@/components/Hero";
-import {Layout} from "@/components/Layout";
-import {ServicesSection} from "@/components/ServicesSection";
-import {About} from "@/components/About";
+import { Hero } from "@/components/Hero";
+import { Layout } from "@/components/Layout";
+import { ServicesSection } from "@/components/ServicesSection";
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
+// export const getStaticProps = async () => {
+//   const response = await fetch(`${process.env.LOCAL_HOST}/api/services`);
+//   const data = await response.json();
+
+//   if (!data) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+
+//   return {
+//     props: {servicesList: data},
+//   };
+// };
+
+// export default function Home({servicesList}) {
 export default function Home() {
   return (
     <>
@@ -23,10 +40,13 @@ export default function Home() {
       </Head>
 
       {/* <Layout> */}
-        <Hero />
-        <ServicesSection />
-        <About />
-        <AboutCourses />
+      <Hero />
+
+      <ServicesSection />
+      <About />
+      <AboutCourses />
+      <Footer />
+
       {/* </Layout> */}
     </>
   );
