@@ -24,7 +24,7 @@ export const servicesList = [
   {
     id: 3,
     title: "TAOBAO + 1688 + pinduoduo",
-    price: 1499,
+    price: 1700,
     priceithFeedback: 2100,
     currency: "грн",
   },

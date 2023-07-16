@@ -14,7 +14,9 @@ const reviews = [
     { id: 3, photoFilename: 'Rectangle31.jpg' },
     { id: 4, photoFilename: 'Rectangle1.jpg'},
     { id: 5, photoFilename: 'Rectangle2.jpg' },
-  { id: 6, photoFilename: 'Rectangle3.jpg'},
+    { id: 6, photoFilename: 'Rectangle3.jpg' },
+    { id: 7, photoFilename: 'IMG_2953.jpg' },
+  { id: 8, photoFilename: 'IMG_2954.jpg'},
   
 ];
 
