@@ -45,7 +45,7 @@ export const ServicesSection = () => {
         </strong>
       </p>
       <p className={styles.serviceInfo}>
-        Мій курс вже пройшли 30+ учнів та деякі вже відкрили свої магазини
+        Мій курс вже пройшли 100+ учнів, та більшість вже відкрили свої магазини
       </p>
       <p>
         <strong className={styles.serviceSecondSlogan}>
