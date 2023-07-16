@@ -21,28 +21,19 @@ export const Sw = () => {
       breakpoints={{
         375: {
           slidesPerView: 2,
-          spaceBetween: 20,
+          spaceBetween: 50,
         },
-        470: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        600: {
-          slidesPerView: 4,
-          spaceBetween: 20,
+        480: {
+          slidesPerView: 2.5,
+          spaceBetween: 50,
         },
         768: {
           slidesPerView: 4,
           spaceBetween: 20,
         },
-        1000: {
+        1200: {
           slidesPerView: 6,
-          spaceBetween: 20,
-        },
-
-        1280: {
-          slidesPerView: 6,
-          spaceBetween: 80,
+          spaceBetween: 170,
         },
       }}
     >
@@ -50,10 +41,10 @@ export const Sw = () => {
         return (
           <SwiperSlide key={product.id}>
             <div className={style.slide_wrapper}>
-                    <img style={{borderRadius: '24px 24px 0 0'}}
-                srcset={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
-                src={product.photo}
-                alt="d"
+              <img style={{ borderRadius: '24px 24px 0 0' }}
+                srcSet={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
+                src={product.photo.src}
+                alt="photo product"
               />
                     <div className={style.slide_thumb}>
                 <ul className={style.country_list}>
