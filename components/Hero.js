@@ -15,7 +15,7 @@ import Image from "next/image"
                      </div>  
                    <div className={styled.svg_container} >
                          <Image className={styled.svg} src="/images/product/heloo.svg" alt="Logo" width={125} height={68} />
-                         <span className={styled.textsvg}>Привет</span>
+                         <span className={styled.textsvg}>Привіт</span>
                      </div>
                      <div className={styled.container_text}>
                          <h3 className={styled.text}>На звʼязку Марія! Вже більше року я працюю з Китаєм та маю власний магазин жіночого одягу. 

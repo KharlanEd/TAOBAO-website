@@ -1,0 +1,64 @@
+
+.reviews_container{
+   background: linear-gradient(180deg, #F88 0%, rgba(241, 96, 96, 0.00) 100%);
+
+    margin-bottom: 32px;
+}
+
+.container {
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    padding-left: 16px;
+    padding-right: 16px;
+
+    text-align: center;
+}
+
+.title{
+padding-top: 12px;
+color: #FFF;
+text-align: center;
+
+
+font-family: Philosopher;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.swiper_container{
+    width: 273px;
+height: 172px;
+
+border-radius: 24px;
+background: #FBFBFB;
+}
+
+.btn{
+width: 156px;
+height: 48px;
+
+font-family: Philosopher;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+padding: 12px;
+
+border-radius: 24px;
+border: 1px solid var(--buttom, #FFF);
+background: var(--pink-light-pink, #FFCACA);
+
+/* glow */
+box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+
+}
