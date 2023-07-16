@@ -1,6 +1,10 @@
 .section {
   padding-bottom: 32px;
   text-align: center;
+
+  @media (min-width: 1280px) {
+    padding-bottom: 96px;
+  }
 }
 
 .container {
@@ -10,6 +14,10 @@
 
   padding-left: 16px;
   padding-right: 16px;
+
+  @media (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 
 .section_btn {
@@ -17,6 +25,10 @@
   border-radius: 24px;
 
   margin-bottom: 32px;
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .btn {
@@ -34,6 +46,10 @@
   background-color: var(--violet-medium-dark);
 
   color: var(--pink-light-pink);
+
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .btn_list {
@@ -69,6 +85,26 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 16px;
+
+  @media (min-width: 1280px) {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 80px;
+  }
+}
+
+.title_list {
+  font-family: "Philosopher", sans-serif;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 36px;
+    font-size: 32px;
+    font-weight: 400;
+  }
 }
 
 .list {
@@ -81,6 +117,20 @@
   font-size: 14px;
   margin-bottom: 16px;
   text-align: left;
+  width: 328px;
+
+  @media (min-width: 1280px) {
+    width: 574px;
+    font-size: 20px;
+    padding: 19px 147px 18px 40px;
+    margin-bottom: 28px;
+  }
+}
+
+.list:last-child {
+  @media (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 
 .list_span {
@@ -91,11 +141,16 @@
   margin-right: 23px;
 }
 
-.wrap {
+.list_wrap {
   padding: 16px;
   border: 1px solid var(--white);
   border-radius: 24px;
   margin-bottom: 16px;
+
+  @media (min-width: 1280px) {
+    border: none;
+    margin-bottom: 0;
+  }
 }
 
 .wrap_text__margin {
@@ -103,15 +158,51 @@
   color: var(--white);
   text-align: left;
   margin-bottom: 15px;
+
+  @media (min-width: 1280px) {
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    width: 322px;
+    padding: 22px;
+    font-size: 20px;
+  }
 }
 
 .wrap_text {
   font-size: 14px;
   color: var(--white);
   text-align: left;
+
+  @media (min-width: 1280px) {
+    border: 1px solid var(--white);
+    border-radius: 24px;
+    width: 322px;
+    padding: 22px;
+    font-size: 20px;
+  }
 }
 
 .title_text {
   font-family: "Philosopher", sans-serif;
   color: var(--pink-light-pink);
+  font-size: 16px;
+
+  @media (min-width: 1280px) {
+    font-size: 24px;
+    width: 404px;
+    margin-left: 210px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrap {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    margin-bottom: 68px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
 }
