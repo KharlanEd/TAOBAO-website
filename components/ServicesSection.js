@@ -6,35 +6,35 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import styles from "../styles/Services.module.css";
 
-// export const servicesList = [
-//   {
-//     id: 1,
-//     title: "Pinduoduo",
-//     price: 999,
-//     priceithFeedback: 1300,
-//     currency: "грн",
-//   },
-//   {
-//     id: 2,
-//     title: "TAOBAO + 1688",
-//     price: 1100,
-//     priceithFeedback: 1600,
-//     currency: "грн",
-//   },
-//   {
-//     id: 3,
-//     title: "TAOBAO + 1688 + pinduoduo",
-//     price: 1700,
-//     priceithFeedback: 2100,
-//     currency: "грн",
-//   },
-// ];
-export const ServicesSection = ({servicesList}) => {
-  if (!servicesList) {
-    return null;
-  }
+export const servicesList = [
+  {
+    id: 1,
+    title: "Pinduoduo",
+    price: 999,
+    priceithFeedback: 1300,
+    currency: "грн",
+  },
+  {
+    id: 2,
+    title: "TAOBAO + 1688",
+    price: 1100,
+    priceithFeedback: 1600,
+    currency: "грн",
+  },
+  {
+    id: 3,
+    title: "TAOBAO + 1688 + pinduoduo",
+    price: 1700,
+    priceithFeedback: 2100,
+    currency: "грн",
+  },
+];
+// export const ServicesSection = ({servicesList}) => {
+//   if (!servicesList) {
+//     return null;
+//   }
 
-  // export const ServicesSection = () => {
+export const ServicesSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.paddingWrapper}>
