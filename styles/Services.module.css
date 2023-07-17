@@ -1,10 +1,20 @@
-.serviceContainer {
+.container {
     padding-bottom: 32px;
+
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+
 
     text-align: center;
 }
 
-.serviceTitle {
+.paddingWrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.title {
     margin-bottom: 16px;
 
     font-family: 'Philosopher', sans-serif;
@@ -13,17 +23,17 @@
     color: var(--white);
 }
 
-.serviceSloganWrap {
+.sloganWrap {
     margin-bottom: 32px;
 }
 
-.serviceSlogan {
+.slogan {
     font-size: 14px;
     font-weight: 400;
     color: var(--pink-light-pink);
 }
 
-.serviceSecondSlogan {
+.secondSlogan {
     display: inline-block;
 
     font-family: 'Philosopher', sans-serif;
@@ -32,7 +42,7 @@
     color: var(--pink-light-pink);
 }
 
-.serviceInfo {
+.info {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 16px;
@@ -45,20 +55,21 @@
     color: var(--white);
 }
 
-.servicesSliderWrap {
+.sliderWrap {
     margin-bottom: 16px;
     width: auto;
     height: 302px;
 
+
 }
 
-.servicesSliderSlide {
+.slide {
     margin-left: 6px;
     margin-bottom: 16px;
     height: 242px;
 }
 
-.servicesliderSlideInner {
+.slideInner {
     width: 156px;
     height: 100%;
 
@@ -69,7 +80,7 @@
     color: var(--white);
 }
 
-.servicesliderSlideTitleBox {
+.slideTitleBox {
     position: relative;
     display: flex;
     justify-content: center;
@@ -79,7 +90,7 @@
     height: 77px;
 }
 
-.servicesliderSlideTitle {
+.slideTitle {
     padding-right: 36px;
     padding-left: 36px;
 
@@ -89,7 +100,7 @@
     color: var(--white);
 }
 
-.servicesliderSlideTitle::after {
+.slideTitle::after {
     content: "";
 
     position: absolute;
@@ -102,27 +113,29 @@
     background-color: var(--violet-light-dark);
 }
 
-.serviceCardSliderPriceWrap {
+/* /////// */
+
+.slideCardWrap {
     padding: 8px 16px;
 
     background: linear-gradient(180deg, #251B37 0%, #675082 100%);
 }
 
-.serviceCardSliderDescr {
+.slideCardDescr {
     margin-bottom: 10px;
 
     font-size: 14px;
     text-align: left;
 }
 
-.serviceCardSliderPrice {
+.slideCardPrice {
     margin-bottom: 10px;
 
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
 }
 
-.servicesBtnBuy {
+.btnBuy {
     display: block;
 
     margin-right: auto;
