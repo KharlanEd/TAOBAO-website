@@ -12,69 +12,78 @@ export const ServicesSection = () => {
   return (
     <section className={styles.container}>
       <div className={styles.paddingWrapper}>
-        <h2 className={styles.title}>TAOBAO /1688/ Pinduoduo/ WeChat</h2>
-        <p className={styles.sloganWrap}>
-          <strong className={styles.slogan}>
-            Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше
-            або відкрити свій магазин
-          </strong>
-        </p>
-        <p className={styles.info}>
-          Мій курс вже пройшли 100+ учнів, та більшість вже відкрили свої
-          магазини
-        </p>
-        <p>
-          <strong className={styles.secondSlogan}>Почни свій шлях і ти</strong>
-        </p>
-        <p className={styles.sloganWrap}>
-          <strong className={styles.secondSlogan}>
-            Давай заощаджувати разом!
-          </strong>
-        </p>
+        <div className={styles.mobTablet}>
+          <h2 className={styles.title}>TAOBAO /1688/ Pinduoduo/ WeChat</h2>
+          <p className={styles.sloganWrap}>
+            <strong className={styles.slogan}>
+              Запамʼятай ці 4 назви, якщо хочеш купувати речі в 5 разів дешевше
+              або відкрити свій магазин
+            </strong>
+          </p>
+          <p className={styles.info}>
+            Мій курс вже пройшли 100+ учнів, та більшість вже відкрили свої
+            магазини
+          </p>
+          <p>
+            <strong className={styles.secondSlogan}>
+              Почни свій шлях і ти
+            </strong>
+          </p>
+          <p className={styles.sloganWrap}>
+            <strong className={styles.secondSlogan}>
+              Давай заощаджувати разом!
+            </strong>
+          </p>
+        </div>
+
+        <div className={styles.desktop}>
+          <p>
+            <strong className={styles.secondSlogan}>
+              Почни свій шлях і ти
+            </strong>
+          </p>
+          <p className={styles.sloganWrap}>
+            <strong className={styles.secondSlogan}>
+              Давай заощаджувати разом!
+            </strong>
+          </p>
+        </div>
       </div>
 
       <Swiper
         className={styles.sliderWrap}
-        // modules={[Navigation, Pagination, Scrollbar, A11y]}
         modules={[Pagination, A11y]}
         // spaceBetween={16}
         // slidesPerView={2}
         centeredSlides
-        centeredSlidesBounds
         initialSlide={1}
         pagination={{
           clickable: true,
         }}
-        // style={{width: "375px", height: "241px"}}
-        // style={{width: "375px", height: "280px"}}
         breakpoints={{
           375: {
             slidesPerView: 2,
-
-            // spaceBetween: 16,
+            spaceBetween: 16,
           },
           480: {
             slidesPerView: 2,
-            // spaceBetween: 16,
+            spaceBetween: 16,
           },
           768: {
             slidesPerView: 3,
-            // spaceBetween: 20,
+            spaceBetween: 20,
+            pagination: false,
           },
           1200: {
             slidesPerView: 3,
+            spaceBetween: 30,
             pagination: false,
-            // spaceBetween: 170,
           },
         }}
       >
         {servicesList &&
           servicesList.map(({id, title, price, priceithFeedback, currency}) => (
-            <SwiperSlide
-              key={id}
-              className={styles.slide}
-              style={{width: "156px !important"}}
-            >
+            <SwiperSlide key={id} className={styles.slide}>
               <div className={styles.slideInner}>
                 <div className={styles.slideTitleBox}>
                   <h3 className={styles.slideTitle}>{title}</h3>
