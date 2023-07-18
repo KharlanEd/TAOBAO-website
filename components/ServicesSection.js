@@ -1,38 +1,12 @@
 import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
+import styles from "../styles/Services.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import styles from "../styles/Services.module.css";
 
-export const servicesList = [
-  {
-    id: 1,
-    title: "Pinduoduo",
-    price: 999,
-    priceithFeedback: 1300,
-    currency: "грн",
-  },
-  {
-    id: 2,
-    title: "TAOBAO + 1688",
-    price: 1100,
-    priceithFeedback: 1600,
-    currency: "грн",
-  },
-  {
-    id: 3,
-    title: "TAOBAO + 1688 + pinduoduo",
-    price: 1700,
-    priceithFeedback: 2100,
-    currency: "грн",
-  },
-];
-// export const ServicesSection = ({servicesList}) => {
-//   if (!servicesList) {
-//     return null;
-//   }
+import {servicesList} from "@/data/servicesList";
 
 export const ServicesSection = () => {
   return (
@@ -61,38 +35,45 @@ export const ServicesSection = () => {
 
       <Swiper
         className={styles.sliderWrap}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={16}
-        slidesPerView={2}
+        // modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Pagination, A11y]}
+        // spaceBetween={16}
+        // slidesPerView={2}
         centeredSlides
         centeredSlidesBounds
         initialSlide={1}
         pagination={{
           clickable: true,
         }}
-        // style={{width: "100%", height: "241px"}}
+        // style={{width: "375px", height: "241px"}}
+        style={{width: "375px", height: "280px"}}
         breakpoints={{
           375: {
             slidesPerView: 2,
-            spaceBetween: 50,
+
+            // spaceBetween: 16,
           },
           480: {
             slidesPerView: 2,
-            spaceBetween: 50,
+            // spaceBetween: 16,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            // spaceBetween: 20,
           },
           1200: {
             slidesPerView: 6,
-            spaceBetween: 170,
+            // spaceBetween: 170,
           },
         }}
       >
         {servicesList &&
           servicesList.map(({id, title, price, priceithFeedback, currency}) => (
-            <SwiperSlide key={id} className={styles.slide}>
+            <SwiperSlide
+              key={id}
+              className={styles.slide}
+              style={{width: "156px !important"}}
+            >
               <div className={styles.slideInner}>
                 <div className={styles.slideTitleBox}>
                   <h3 className={styles.slideTitle}>{title}</h3>

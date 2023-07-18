@@ -57,14 +57,12 @@
 
 .sliderWrap {
     margin-bottom: 16px;
-    width: auto;
+    width: 500px;
     height: 302px;
-
-
 }
 
 .slide {
-    margin-left: 6px;
+
     margin-bottom: 16px;
     height: 242px;
 }
@@ -113,10 +111,11 @@
     background-color: var(--violet-light-dark);
 }
 
-/* /////// */
+
 
 .slideCardWrap {
     padding: 8px 16px;
+    height: 100%;
 
     background: linear-gradient(180deg, #251B37 0%, #675082 100%);
 }

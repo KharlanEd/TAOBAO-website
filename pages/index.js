@@ -6,7 +6,7 @@ import styles from "@/styles/Home.module.css";
 import {AboutCourses} from "@/components/AboutCourses";
 
 import {Hero} from "@/components/Hero";
-import {Layout} from "@/components/Layout";
+// import {Layout} from "@/components/Layout";
 import {ServicesSection} from "@/components/ServicesSection";
 import {About} from "@/components/About";
 import {Footer} from "@/components/Footer";
@@ -15,22 +15,6 @@ import {ProductCourusel} from "@/components/ProductSection";
 
 const inter = Inter({subsets: ["latin"]});
 
-// export const getStaticProps = async () => {
-//   const response = await fetch(`${process.env.LOCAL_HOST}/api/services`);
-//   const data = await response.json();
-
-//   if (!data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-
-//   return {
-//     props: {servicesList: data},
-//   };
-// };
-
-// export default function Home({servicesList}) {
 export default function Home() {
   return (
     <>
@@ -45,7 +29,6 @@ export default function Home() {
       <Hero />
 
       <ServicesSection />
-      {/* <ServicesSection servicesList={servicesList} /> */}
       <About />
       <AboutCourses />
       <ProductCourusel />
