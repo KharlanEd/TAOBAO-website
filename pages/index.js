@@ -5,13 +5,16 @@ import styles from "@/styles/Home.module.css";
 
 import {AboutCourses} from "@/components/AboutCourses";
 
-import {Hero} from "@/components/Hero";
-// import {Layout} from "@/components/Layout";
-import {ServicesSection} from "@/components/ServicesSection";
-import {About} from "@/components/About";
-import {Footer} from "@/components/Footer";
-import {Reviews} from "@/components/Reviews";
-import {ProductCourusel} from "@/components/ProductSection";
+import { Hero } from "@/components/Hero";
+
+import { ServicesSection } from "@/components/ServicesSection";
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
+import { Reviews } from "@/components/Reviews";
+import { Container } from "@/components/Container";
+import { Header } from "@/components/Header";
+import { ProductCourusel } from "@/components/ProductSection";
+
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -25,8 +28,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Layout> */}
-      <Hero />
+      <Container>
+        <Header/>
+        <Hero /> 
+     </Container>
+     
 
       <ServicesSection />
       <About />
@@ -35,7 +41,7 @@ export default function Home() {
       <Reviews />
       <Footer />
 
-      {/* </Layout> */}
+  
     </>
   );
 }
