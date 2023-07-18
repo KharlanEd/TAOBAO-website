@@ -13,17 +13,14 @@
     padding-right: 16px;
 }
 
-.gradient{
 
-  background: linear-gradient(180deg, #000 16.45%, rgba(0, 0, 0, 0.00) 100%);
-}
 
 
 
 
 .title{
   padding-top: 20px;
-margin-bottom: 320px;
+margin-bottom: 224px;
 font-family: Philosopher;
 font-size: 24px;
 font-style: normal;
