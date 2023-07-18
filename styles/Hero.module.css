@@ -13,6 +13,11 @@
     padding-right: 16px;
 }
 
+.gradient{
+
+  background: linear-gradient(180deg, #000 16.45%, rgba(0, 0, 0, 0.00) 100%);
+}
+
 
 
 
@@ -90,4 +95,21 @@ color: var(--white);
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
     text-align: left;
+}
+
+
+@media (min-width:768px) {
+  .container {
+    max-width: 768px;
+    
+   
+}
+
+
+}
+
+@media (min-width:1280px){
+  .container {
+    max-width: 1280px;
+  }
 }

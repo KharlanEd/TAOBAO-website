@@ -6,11 +6,14 @@ import styles from "@/styles/Home.module.css";
 import {AboutCourses} from "@/components/AboutCourses";
 
 import { Hero } from "@/components/Hero";
-import { Layout } from "@/components/Layout";
+
 import { ServicesSection } from "@/components/ServicesSection";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { Reviews } from "@/components/Reviews";
+import { Container } from "@/components/Container";
+import { Header } from "@/components/Header";
+import { ProductCourusel } from "@/components/ProductSection";
 
 const inter = Inter({subsets: ["latin"]});
 
