@@ -46,7 +46,7 @@ export const ServicesSection = () => {
           clickable: true,
         }}
         // style={{width: "375px", height: "241px"}}
-        style={{width: "375px", height: "280px"}}
+        // style={{width: "375px", height: "280px"}}
         breakpoints={{
           375: {
             slidesPerView: 2,
@@ -58,11 +58,12 @@ export const ServicesSection = () => {
             // spaceBetween: 16,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 3,
             // spaceBetween: 20,
           },
           1200: {
-            slidesPerView: 6,
+            slidesPerView: 3,
+            pagination: false,
             // spaceBetween: 170,
           },
         }}
