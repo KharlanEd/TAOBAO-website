@@ -15,24 +15,9 @@ import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
 import { ProductCourusel } from "@/components/ProductSection";
 
+
 const inter = Inter({subsets: ["latin"]});
 
-// export const getStaticProps = async () => {
-//   const response = await fetch(`${process.env.LOCAL_HOST}/api/services`);
-//   const data = await response.json();
-
-//   if (!data) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-
-//   return {
-//     props: {servicesList: data},
-//   };
-// };
-
-// export default function Home({servicesList}) {
 export default function Home() {
   return (
     <>
@@ -50,7 +35,6 @@ export default function Home() {
      
 
       <ServicesSection />
-      {/* <ServicesSection servicesList={servicesList} /> */}
       <About />
       <AboutCourses />
       <ProductCourusel />
