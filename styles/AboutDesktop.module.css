@@ -1,0 +1,72 @@
+.section {
+  background-color: var(--white);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.title {
+  margin-bottom: 56px;
+
+  color: var(--violet-dark);
+  font-family: "Philosopher", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.text {
+  margin-bottom: 56px;
+
+  color: var(--violet-dark);
+  font-size: 24px;
+}
+
+.btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  padding: 19px 36px;
+  border: none;
+  border-radius: 24px;
+
+  font-family: "Philosopher", sans-serif;
+  font-size: 24px;
+  background-color: var(--pink-dark-pink);
+
+  color: var(--white);
+}
+
+.btn_list {
+  position: absolute;
+  transform: scale(1);
+  z-index: 100;
+  border-radius: 24px;
+  width: 328px;
+
+  background-color: var(--violet-medium-dark);
+  text-align: left;
+  padding: 64px 15px 13px 20px;
+}
+
+.btn_list__item {
+  margin-bottom: 16px;
+}
+
+.btn_list__title {
+  color: var(--pink-dark-pink);
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 16px;
+}
+
+.list_title__first {
+  text-transform: uppercase;
+  color: var(--pink-dark-pink);
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 16px;
+}
+
+.btn_list__text {
+  color: var(--white);
+  font-size: 14px;
+}

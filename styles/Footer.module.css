@@ -3,22 +3,64 @@
   margin-left: auto;
   margin-right: auto;
 
-  padding-left: 16px;
-  padding-right: 16px;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-bottom: 78px;
+  }
 }
 
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.wrapper:first-child {
-  margin-bottom: 15px;
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    justify-content: flex-start;
+    margin-left: 121px;
+    gap: 50px;
+  }
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    gap: 33px;
+  }
 }
 
 .title {
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   color: var(--white);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 24px;
+    font-weight: 400;
+  }
 }
