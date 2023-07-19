@@ -1,24 +1,30 @@
-/* .mobTablet{} */
-@media screen and (min-width: 1200px) {
-    .mobTablet {
-        display: none;
-    }
-}
-
 .desktop {
-    padding-bottom: 100px;
+    position: relative;
+
+    padding-top: 120px;
+    padding-bottom: 80px;
 }
 
-@media screen and (max-width: 1199px) {
-    .desktop {
-        display: none;
+.desktopWrap::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 
-    }
+    content: "";
+    display: block;
+
+
+    width: 224px;
+    height: 217px;
+    border-radius: 58px;
+
+    background-image: url("../public/images/services/girl.png");
+    background-repeat: no-repeat;
 }
-
 
 .container {
     padding-bottom: 32px;
+    overflow: hidden;
 
     max-width: 375px;
     margin-left: auto;
@@ -26,26 +32,6 @@
 
     text-align: center;
 }
-
-@media screen and (min-width: 480px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 1200px;
-        padding-bottom: 100px;
-    }
-}
-
 
 .paddingWrapper {
     padding-left: 16px;
@@ -80,13 +66,6 @@
     color: var(--pink-light-pink);
 }
 
-@media screen and (min-width: 1200px) {
-    .secondSlogan {
-        font-size: 36px;
-        font-weight: 700;
-    }
-}
-
 .info {
     margin-right: auto;
     margin-left: auto;
@@ -100,9 +79,6 @@
     color: var(--white);
 }
 
-
-
-
 .sliderWrap {
     display: flex;
     justify-content: center;
@@ -113,38 +89,12 @@
     height: 302px;
 }
 
-@media screen and (min-width: 1200px) {
-    .sliderWrap {
-        margin-bottom: 100px;
-        /* width: 1200px; */
-        /* width: auto; */
-        height: 302px;
-
-    }
-}
-
 .slide {
     margin-bottom: 16px;
     height: 242px;
 }
 
-/* .slide:first-child {
-    margin-left: 10px;
-} */
-
-
-@media screen and (min-width: 1200px) {
-    .slide {
-
-        /* width: 300px; */
-        height: 280px;
-
-
-    }
-}
-
 .slideInner {
-    /* width: 156px; */
     height: 100%;
 
     border: 1px solid var(--violet-light-dark);
@@ -153,25 +103,6 @@
 
     color: var(--white);
 }
-
-@media screen and (min-width: 1200px) {
-    .slideInner {
-
-        /* width: 300px; */
-        height: 280px;
-        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
-
-    }
-}
-
-/* @media screen and (min-width: 1200px) {
-    .swiper-slide-active>.slideInner {
-
-
-        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
-
-    }
-} */
 
 .slideTitleBox {
     position: relative;
@@ -194,19 +125,17 @@
 }
 
 .slideTitle::after {
-    content: "";
-
     position: absolute;
-    display: block;
     left: 0;
     bottom: -1px;
+
+    content: "";
+    display: block;
     width: 100%;
     height: 1px;
 
     background-color: var(--violet-light-dark);
 }
-
-
 
 .slideCardWrap {
     padding: 8px 16px;
@@ -229,7 +158,9 @@
     font-weight: 700;
 }
 
+
 .btnBuy {
+    position: relative;
     display: block;
 
     margin-right: auto;
@@ -242,19 +173,213 @@
     border-radius: 24px;
     border: 1px solid var(--white);
     background-color: var(--pink-medium-pink);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
 
     font-family: 'Philosopher', sans-serif;
     font-weight: 700;
 }
 
+.btnBuy:hover,
+.btnBuy:focus {
+    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .desktop {
+        display: none;
+    }
+
+    .desktopWrap {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1200px) {
+
+    .mobTablet {
+        display: none;
+    }
+
+    .container {
+        max-width: 1200px;
+        padding-bottom: 100px;
+    }
+
+    .paddingWrapper {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .desktop::before {
+        position: absolute;
+        top: 79px;
+        right: 16px;
+        transform: translate(50%);
+
+
+        content: "";
+        display: block;
+
+        width: 60px;
+        height: 60px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    .desktop::after {
+        position: absolute;
+        top: -6px;
+        right: -126px;
+
+
+        content: "";
+        display: block;
+
+        width: 126px;
+        height: 126px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    .leftRound::after {
+        position: absolute;
+        top: 120px;
+        left: -162px;
+
+        content: "";
+        display: block;
+
+        width: 126px;
+        height: 126px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    .swiperDescWrap {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .secondSlogan {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .sliderWrap {
+        margin-bottom: 100px;
+        height: 302px;
+        overflow: visible;
+    }
+
+    .slide {
+        height: 280px;
+    }
+
+    .slideInner {
+        height: 280px;
+        margin: 20px;
+    }
+
+    .slideInner:hover,
+    .slideInner:focus {
+        border: 3px solid #FFD2D2;
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+    }
+
+    .slideTitleBox {
+        height: 88px;
+    }
+
+    .slideTitle {
+        font-size: 24px;
+    }
+
+    .slideTitle::after {
+        height: 3px;
+    }
+
+    .slideCardWrap {
+        padding: 0;
+    }
+
+    .cardPriceInner {
+        position: relative;
+        display: flex;
+        padding: 20px;
+    }
+
+    .slideCardDescr:first-child::after {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+
+        content: "";
+        display: block;
+        width: 140px;
+        height: 3px;
+
+        background-color: var(--violet-light-dark);
+    }
+
+
+    .slideCardDescr {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .slideCardPrice {
+        align-self: end;
+
+        white-space: nowrap;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .btnBuy {
         padding: 8px 27px;
         width: 280px;
         height: 64px;
 
         font-size: 40px;
+    }
 
+    .btnBuy::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        content: "";
+        display: block;
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
     }
 }

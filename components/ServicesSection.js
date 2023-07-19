@@ -37,80 +37,87 @@ export const ServicesSection = () => {
         </div>
 
         <div className={styles.desktop}>
-          <p>
-            <strong className={styles.secondSlogan}>
-              Почни свій шлях і ти
-            </strong>
-          </p>
-          <p className={styles.sloganWrap}>
-            <strong className={styles.secondSlogan}>
-              Давай заощаджувати разом!
-            </strong>
-          </p>
+          <div className={styles.leftRound}></div>
+          <div className={styles.desktopWrap}>
+            <p>
+              <strong className={styles.secondSlogan}>
+                Почни свій шлях і ти
+              </strong>
+            </p>
+            <p className={styles.sloganWrap}>
+              <strong className={styles.secondSlogan}>
+                Давай заощаджувати разом!
+              </strong>
+            </p>
+          </div>
         </div>
       </div>
 
-      <Swiper
-        className={styles.sliderWrap}
-        modules={[Pagination, A11y]}
-        // spaceBetween={16}
-        // slidesPerView={2}
-        centeredSlides
-        initialSlide={1}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          375: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-          },
-          480: {
-            slidesPerView: 2,
-            spaceBetween: 16,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            pagination: false,
-          },
-          1200: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            pagination: false,
-          },
-        }}
-      >
-        {servicesList &&
-          servicesList.map(({id, title, price, priceithFeedback, currency}) => (
-            <SwiperSlide key={id} className={styles.slide}>
-              <div className={styles.slideInner}>
-                <div className={styles.slideTitleBox}>
-                  <h3 className={styles.slideTitle}>{title}</h3>
-                </div>
+      <div className={styles.swiperDescWrap}>
+        <Swiper
+          className={styles.sliderWrap}
+          modules={[Pagination, A11y]}
+          // spaceBetween={16}
+          // slidesPerView={2}
+          centeredSlides
+          initialSlide={1}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            375: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 16,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+              pagination: false,
+            },
+            1200: {
+              slidesPerView: 3,
+              spaceBetween: 5,
+              pagination: false,
+            },
+          }}
+        >
+          {servicesList &&
+            servicesList.map(
+              ({id, title, price, priceithFeedback, currency}) => (
+                <SwiperSlide key={id} className={styles.slide}>
+                  <div className={styles.slideInner}>
+                    <div className={styles.slideTitleBox}>
+                      <h3 className={styles.slideTitle}>{title}</h3>
+                    </div>
 
-                <ul className={styles.slideCardWrap}>
-                  <li>
-                    <p className={styles.slideCardDescr}>
-                      самостійне проходження
-                    </p>
-                    <p
-                      className={styles.slideCardPrice}
-                    >{`${price} ${currency}`}</p>
-                  </li>
-                  <li>
-                    <p className={styles.slideCardDescr}>
-                      Зі зворотнім зв’язком
-                    </p>
-                    <p
-                      className={styles.slideCardPrice}
-                    >{`${priceithFeedback} ${currency}`}</p>
-                  </li>
-                </ul>
-              </div>
-            </SwiperSlide>
-          ))}
-      </Swiper>
+                    <ul className={styles.slideCardWrap}>
+                      <li className={styles.cardPriceInner}>
+                        <p className={styles.slideCardDescr}>
+                          самостійне проходження
+                        </p>
+                        <p
+                          className={styles.slideCardPrice}
+                        >{`${price} ${currency}`}</p>
+                      </li>
+                      <li className={styles.cardPriceInner}>
+                        <p className={styles.slideCardDescr}>
+                          зі зворотнім зв’язком
+                        </p>
+                        <p
+                          className={styles.slideCardPrice}
+                        >{`${priceithFeedback} ${currency}`}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </SwiperSlide>
+              )
+            )}
+        </Swiper>
+      </div>
 
       <div className={styles.paddingWrapper}>
         <a
