@@ -12,7 +12,7 @@ import { products } from "@/data/products";
 export const Sw = () => {
   const swiperRef = useRef();
   return (<>
-    <button onClick={() => swiperRef.current.slidePrev()} style={{ background: 'white' }}>
+    <button type="button" onClick={() => swiperRef.current.slidePrev()} className={style.navigationBtn}>
       <Image src='/arrow-left.svg' width={40} height={82} alt='arrow left icon' />
       </button>
     <Swiper
@@ -41,7 +41,7 @@ export const Sw = () => {
       breakpoints={{
         375: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 20,
         },
         480: {
           slidesPerView: 2.5,
@@ -52,8 +52,8 @@ export const Sw = () => {
           spaceBetween: 20,
         },
         1200: {
-          slidesPerView: 5,
-          spaceBetween: 130,
+          slidesPerView: 6,
+          spaceBetween: 160,
         },
       }}
     >
@@ -61,9 +61,10 @@ export const Sw = () => {
         return (
           <SwiperSlide key={product.id}>
             <div className={style.slide_wrapper}>
-              <img style={{ borderRadius: '24px 24px 0 0' }}
+              <img style={{ borderRadius: '24px 24px 0 0' }} width={156} height={177}
                 srcSet={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
                 src={product.photo.src}
+
                 alt="Product photo with price"
               />
                     <div className={style.slide_thumb}>
@@ -81,7 +82,7 @@ export const Sw = () => {
         );
       })}
     </Swiper>
-    <button onClick={() => swiperRef.current.slideNext()}>
+    <button type='button' onClick={() => swiperRef.current.slideNext()} className={style.navigationBtn}>
       <Image src='/arrow-rigth.svg' width={40} height={82} alt='arrow left icon' />
       </button>
     

@@ -166,3 +166,13 @@ padding-top: 36px;
 .county_item {
     margin-bottom: 3px;
 }
+
+.navigationBtn {
+  display: none;
+  align-self: center;
+  width: 42px;
+  height: 80px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
