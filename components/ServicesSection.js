@@ -75,7 +75,7 @@ export const ServicesSection = () => {
             },
             768: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 30,
               pagination: false,
             },
             1200: {
@@ -87,7 +87,7 @@ export const ServicesSection = () => {
         >
           {servicesList &&
             servicesList.map(
-              ({id, title, price, priceithFeedback, currency}) => (
+              ({id, title, price, priceWithFeedback, currency}) => (
                 <SwiperSlide key={id} className={styles.slide}>
                   <div className={styles.slideInner}>
                     <div className={styles.slideTitleBox}>
@@ -109,7 +109,7 @@ export const ServicesSection = () => {
                         </p>
                         <p
                           className={styles.slideCardPrice}
-                        >{`${priceithFeedback} ${currency}`}</p>
+                        >{`${priceWithFeedback} ${currency}`}</p>
                       </li>
                     </ul>
                   </div>
