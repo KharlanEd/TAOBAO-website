@@ -64,7 +64,6 @@ export const Sw = () => {
               <img style={{ borderRadius: '24px 24px 0 0' }} width={156} height={177}
                 srcSet={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
                 src={product.photo.src}
-
                 alt="Product photo with price"
               />
                     <div className={style.slide_thumb}>
