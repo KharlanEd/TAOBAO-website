@@ -1,5 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
+import { useRef } from "react";
+
+import Image from 'next/image';
 
 import "swiper/css";
 import style from '../styles/AboutCourses.module.css'
@@ -7,16 +10,33 @@ import style from '../styles/AboutCourses.module.css'
 import { products } from "@/data/products";
 
 export const Sw = () => {
-  return (
+  const swiperRef = useRef();
+  return (<>
+    <button onClick={() => swiperRef.current.slidePrev()} style={{ background: 'white' }}>
+      <Image src='/arrow-left.svg' width={40} height={82} alt='arrow left icon' />
+      </button>
     <Swiper
+      onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
       spaceBetween={40}
       slidesPerView={2}
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop={true}
-      modules={[Autoplay]}
+
+      modules={[Autoplay,Navigation]}
       effect="slide"
       centeredSlides={true}
       speed={1000}
+      injectStyles={{
+          '.swiper-button-next, .swiper-button-prev': {
+          backgroundColor: 'white',
+          padding: '8px 16px',
+          borderRadius: '100%',
+          border: '2px solid black',
+          color: 'red',
+        },
+        }}
       style={{ width: "100%", height: "241px" }}
       breakpoints={{
         375: {
@@ -32,8 +52,8 @@ export const Sw = () => {
           spaceBetween: 20,
         },
         1200: {
-          slidesPerView: 6,
-          spaceBetween: 170,
+          slidesPerView: 5,
+          spaceBetween: 130,
         },
       }}
     >
@@ -44,7 +64,7 @@ export const Sw = () => {
               <img style={{ borderRadius: '24px 24px 0 0' }}
                 srcSet={`${product.photo.src} 1x, ${product.photoRetina.src} 2x`}
                 src={product.photo.src}
-                alt="photo product"
+                alt="Product photo with price"
               />
                     <div className={style.slide_thumb}>
                 <ul className={style.country_list}>
@@ -61,5 +81,10 @@ export const Sw = () => {
         );
       })}
     </Swiper>
+    <button onClick={() => swiperRef.current.slideNext()}>
+      <Image src='/arrow-rigth.svg' width={40} height={82} alt='arrow left icon' />
+      </button>
+    
+    </>
   );
 };

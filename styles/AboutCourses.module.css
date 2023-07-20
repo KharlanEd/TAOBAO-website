@@ -134,7 +134,9 @@ padding-top: 36px;
   };
 
   @media screen and (min-width: 1200px) {
-    max-width: 886px;
+    display: flex;
+    gap: 50px;
+    max-width: 1017px;
     
   };
 }
