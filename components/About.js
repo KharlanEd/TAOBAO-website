@@ -9,8 +9,8 @@ export const About = () => {
   };
 
   return (
-    <section className={styles.section}>
-      <div className={styles.container}>
+    <section className={styles.container}>
+      <div className={styles.section}>
         {!showDiv ? (
           <button type="button" onClick={onBtnClick} className={styles.btn}>
             Детальніше про платформи
