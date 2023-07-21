@@ -5,6 +5,10 @@
     padding-bottom: 80px;
 }
 
+.mobTablet {
+    position: relative;
+}
+
 .desktopWrap::before {
     position: absolute;
     left: 0;
@@ -20,6 +24,8 @@
 
     background-image: url("../public/images/services/girl.png");
     background-repeat: no-repeat;
+
+    z-index: -1;
 }
 
 .container {
@@ -49,6 +55,9 @@
 
 .sloganWrap {
     margin-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 328px;
 }
 
 .slogan {
@@ -71,6 +80,11 @@
     margin-left: auto;
     margin-bottom: 16px;
     padding: 6px 10px;
+
+    width: 100%;
+    /* height: 100%; */
+    max-width: 328px;
+    min-height: 48px;
 
     background-color: var(--violet-light-dark);
     border-radius: 16px;
@@ -202,6 +216,80 @@
 
     .desktopWrap {
         display: none;
+    }
+
+    .mobTablet::after {
+        position: absolute;
+        top: 121px;
+        right: -63px;
+
+        content: "";
+        display: block;
+
+        width: 126px;
+        height: 126px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    .mobTablet::before {
+        position: absolute;
+        top: 142px;
+        right: 60px;
+
+        content: "";
+        display: block;
+
+        width: 34px;
+        height: 34px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    /* .btnBuy {
+        position: static;
+    } */
+
+    .title::before {
+        position: absolute;
+        bottom: -300px;
+        right: -50px;
+        /* transform: translate(-50%, -50%); */
+
+        content: "";
+        display: block;
+
+        width: 66px;
+        height: 66px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
+    }
+
+    .title::after {
+        position: absolute;
+        top: 610px;
+        left: -50px;
+        /* transform: translate(-50%, -50%); */
+
+        content: "";
+        display: block;
+
+        width: 118px;
+        height: 118px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(252, 163, 163, 0.50);
+        box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
+        z-index: -1;
     }
 }
 
