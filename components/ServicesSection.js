@@ -1,12 +1,12 @@
-import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
-import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "../styles/Services.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import {servicesList} from "@/data/servicesList";
+import { servicesList } from "@/data/servicesList";
 
 export const ServicesSection = () => {
   return (
@@ -87,7 +87,7 @@ export const ServicesSection = () => {
         >
           {servicesList &&
             servicesList.map(
-              ({id, title, price, priceWithFeedback, currency}) => (
+              ({ id, title, price, priceWithFeedback, currency }) => (
                 <SwiperSlide key={id} className={styles.slide}>
                   <div className={styles.slideInner}>
                     <div className={styles.slideTitleBox}>

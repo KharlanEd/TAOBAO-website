@@ -1,72 +1,161 @@
-.section {
-  background-color: var(--white);
-  padding-top: 100px;
-  padding-bottom: 100px;
+@media screen and (max-width: 1199px) {
+  .section {
+    display: none;
+  }
 }
 
-.title {
-  margin-bottom: 56px;
+@media screen and (min-width: 1200px) {
+  .section {
+    background-color: var(--white);
+  }
 
-  color: var(--violet-dark);
-  font-family: "Philosopher", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-}
+  .container {
+    display: flex;
+    gap: 8px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
-.text {
-  margin-bottom: 56px;
+    /* padding-top: 4px; */
+    /* padding-bottom: 100px; */
+    padding-left: 120px;
+    padding-right: 66px;
+  }
 
-  color: var(--violet-dark);
-  font-size: 24px;
-}
+  /* .wrap {
+    padding-top: 100px;
+    padding-bottom: 101px;
+  } */
 
-.btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  padding: 19px 36px;
-  border: none;
-  border-radius: 24px;
+  .title {
+    margin-bottom: 56px;
 
-  font-family: "Philosopher", sans-serif;
-  font-size: 24px;
-  background-color: var(--pink-dark-pink);
+    color: var(--violet-dark);
+    font-family: "Philosopher", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+  }
 
-  color: var(--white);
-}
+  .text {
+    margin-bottom: 56px;
 
-.btn_list {
-  position: absolute;
-  transform: scale(1);
-  z-index: 100;
-  border-radius: 24px;
-  width: 328px;
+    color: var(--violet-dark);
+    font-size: 24px;
+  }
 
-  background-color: var(--violet-medium-dark);
-  text-align: left;
-  padding: 64px 15px 13px 20px;
-}
+  .btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    padding: 19px 36px;
+    border: none;
+    border-radius: 24px;
 
-.btn_list__item {
-  margin-bottom: 16px;
-}
+    font-family: "Philosopher", sans-serif;
+    font-size: 24px;
+    background-color: var(--pink-dark-pink);
 
-.btn_list__title {
-  color: var(--pink-dark-pink);
-  font-family: "Philosopher", sans-serif;
-  margin-bottom: 16px;
-}
+    color: var(--white);
+  }
 
-.list_title__first {
-  text-transform: uppercase;
-  color: var(--pink-dark-pink);
-  font-family: "Philosopher", sans-serif;
-  margin-bottom: 16px;
-}
+  .btn_list {
+    position: absolute;
+    left: 17%;
+    transform: scale(1);
+    z-index: 100;
+    border-radius: 24px;
+    width: 328px;
 
-.btn_list__text {
-  color: var(--white);
-  font-size: 14px;
+    background-color: var(--violet-medium-dark);
+    text-align: left;
+    padding: 30px 15px 13px 20px;
+  }
+
+  .btn_list__item {
+    margin-bottom: 16px;
+  }
+
+  .btn_list__title {
+    color: var(--pink-dark-pink);
+    font-family: "Philosopher", sans-serif;
+    margin-bottom: 16px;
+  }
+
+  .list_title__first {
+    text-transform: uppercase;
+    color: var(--pink-dark-pink);
+    font-family: "Philosopher", sans-serif;
+    margin-bottom: 16px;
+  }
+
+  .btn_list__text {
+    color: var(--white);
+    font-size: 14px;
+  }
+
+  .wrapper {
+    width: 200px;
+    padding-top: 4px;
+    padding-bottom: 7px;
+  }
+
+  .wrapImg_1 {
+    position: relative;
+  }
+
+  .img_1 {
+    position: relative;
+
+    display: block;
+    width: 132px;
+    height: 132px;
+    /* z-index: 1; */
+  }
+
+  .wrapImg_1::after {
+    position: absolute;
+    top: -11px;
+    left: 29px;
+    transform: rotate(-12deg);
+    flex-shrink: 0;
+    /* overflow: hidden; */
+
+    content: "";
+    display: block;
+
+    width: 140px;
+    height: 140px;
+    background-color: #251b37;
+
+    border-radius: 32px;
+    /* border: 1px solid rgba(252, 163, 163, 0.5); */
+    /* box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5); */
+    /* z-index: -1; */
+  }
+
+  .img_2 {
+    display: block;
+    width: 124px;
+    height: 124px;
+    margin-left: 94px;
+    margin-right: 0;
+  }
+
+  .img_3 {
+    display: block;
+    width: 124px;
+    height: 113px;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
+  .img_4 {
+    display: block;
+    width: 104px;
+    height: 104px;
+    margin-left: 132px;
+    margin-right: 0;
+  }
 }
