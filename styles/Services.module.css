@@ -29,7 +29,6 @@
 
 .container {
   padding-bottom: 32px;
-  overflow: hidden;
 
   max-width: 375px;
   margin-left: auto;
@@ -81,7 +80,6 @@
   padding: 6px 10px;
 
   width: 100%;
-  /* height: 100%; */
   max-width: 328px;
   min-height: 48px;
 
@@ -192,6 +190,7 @@
 .btnBuy:hover,
 .btnBuy:focus {
   box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
+  transition: box-shadow 1s ease;
 }
 
 @media screen and (min-width: 480px) {
@@ -249,15 +248,10 @@
     z-index: -1;
   }
 
-  /* .btnBuy {
-        position: static;
-    } */
-
   .title::before {
     position: absolute;
     bottom: -300px;
     right: -50px;
-    /* transform: translate(-50%, -50%); */
 
     content: "";
     display: block;
@@ -275,7 +269,6 @@
     position: absolute;
     top: 610px;
     left: -50px;
-    /* transform: translate(-50%, -50%); */
 
     content: "";
     display: block;
@@ -357,6 +350,13 @@
     z-index: -1;
   }
 
+  .secondSlogan {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .swiperDescWrap {
     padding-left: 120px;
     padding-right: 120px;
@@ -386,6 +386,7 @@
   .slideInner:focus {
     border: 3px solid #ffd2d2;
     box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
+    transition: box-shadow 1s ease;
   }
 
   .slideTitleBox {
