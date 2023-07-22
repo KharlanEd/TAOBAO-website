@@ -409,7 +409,7 @@
     padding: 20px;
   }
 
-  .slideCardDescr:first-child::after {
+  .cardPriceInner:first-child::after {
     position: absolute;
     left: 0;
     bottom: -1px;
