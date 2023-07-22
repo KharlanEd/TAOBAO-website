@@ -26,10 +26,29 @@
 }
 
 .wrapper {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.wrapper::before {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  overflow: hidden;
+
+  content: "";
+  display: block;
+
+  width: 118px;
+  height: 118px;
+
+  border-radius: 50%;
+  border: 2px solid rgba(252, 163, 163, 0.5);
+  box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
+  z-index: -1;
 }
 
 @media screen and (min-width: 1200px) {

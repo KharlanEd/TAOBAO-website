@@ -1,14 +1,7 @@
 import { useState } from "react";
+import Image from "next/image";
 
 import styles from "../styles/AboutDesktop.module.css";
-import img_1 from "@/public/images/about/1_image1x.jpg";
-import img_1Retina from "@/public/images/about/1_image2x.jpg";
-import img_2 from "@/public/images/about/2_image1x.jpg";
-import img_2Retina from "@/public/images/about/2_image2x.jpg";
-import img_3 from "@/public/images/about/3_image1x.jpg";
-import img_3Retina from "@/public/images/about/3_image2x.jpg";
-import img_4 from "@/public/images/about/4_image1x.jpg";
-import img_4Retina from "@/public/images/about/4_image2x.jpg";
 
 export const AboutDesktop = () => {
   const [showModal, setShowModal] = useState(false);
@@ -80,32 +73,23 @@ export const AboutDesktop = () => {
           )}
         </div>
         <div className={styles.wrapper}>
-          <div className={styles.wrapImg_1}>
-            <img
-              className={styles.img_1}
-              srcSet={`${img_1.src} 1x, ${img_1Retina.src} 2x`}
-              src={img_1}
-              alt="image"
+          <div className={styles.img_taobao}>
+            <Image src="/taobao.svg" alt="taobao" width={132} height={132} />
+          </div>
+          <div className={styles.img_1688}>
+            <Image src="/1688.svg" alt="1688" width={124} height={124} />
+          </div>
+          <div className={styles.img_pinduoduo}>
+            <Image
+              src="/pinduoduo.svg"
+              alt="pinduoduo"
+              width={124}
+              height={113}
             />
           </div>
-          <img
-            className={styles.img_2}
-            srcSet={`${img_2.src} 1x, ${img_2Retina.src} 2x`}
-            src={img_2}
-            alt="image"
-          />
-          <img
-            className={styles.img_3}
-            srcSet={`${img_3.src} 1x, ${img_3Retina.src} 2x`}
-            src={img_3}
-            alt="image"
-          />
-          <img
-            className={styles.img_4}
-            srcSet={`${img_4.src} 1x, ${img_4Retina.src} 2x`}
-            src={img_4}
-            alt="image"
-          />
+          <div className={styles.img_wechat}>
+            <Image src="/wechat.svg" alt="wechat" width={104} height={104} />
+          </div>
         </div>
       </div>
     </section>
