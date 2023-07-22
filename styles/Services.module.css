@@ -29,7 +29,6 @@
 
 .container {
   padding-bottom: 32px;
-
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +77,6 @@
   margin-left: auto;
   margin-bottom: 16px;
   padding: 6px 10px;
-
   width: 100%;
   max-width: 328px;
   min-height: 48px;
@@ -108,9 +106,9 @@
 .slideInner {
   height: 100%;
 
+  overflow: hidden;
   border: 1px solid var(--violet-light-dark);
   border-radius: 24px;
-  overflow: hidden;
 
   color: var(--white);
 }
@@ -120,7 +118,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 100%;
   height: 77px;
 }
@@ -141,6 +138,7 @@
   bottom: -1px;
 
   content: "";
+
   display: block;
   width: 100%;
   height: 1px;
@@ -172,7 +170,6 @@
 .btnBuy {
   position: relative;
   display: block;
-
   margin-right: auto;
   margin-left: auto;
   padding: 15px 51px;
@@ -378,8 +375,8 @@
   }
 
   .slideInner {
-    height: 280px;
     margin: 20px;
+    height: 280px;
   }
 
   .slideInner:hover,
@@ -407,6 +404,7 @@
 
   .cardPriceInner {
     position: relative;
+
     display: flex;
     padding: 20px;
   }
@@ -425,7 +423,7 @@
   }
 
   .slideCardDescr {
-    font-family: Montserrat;
+    font-family: 'Philosopher', sans-serif;
     font-size: 20px;
     font-weight: 400;
   }

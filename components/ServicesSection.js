@@ -1,12 +1,13 @@
-import {Navigation, Pagination, Scrollbar, A11y} from "swiper/modules";
+import {Pagination, A11y} from "swiper/modules";
 import {Swiper, SwiperSlide} from "swiper/react";
+
+import {servicesList} from "@/data/servicesList";
+
 import styles from "../styles/Services.module.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-
-import {servicesList} from "@/data/servicesList";
 
 export const ServicesSection = () => {
   return (
