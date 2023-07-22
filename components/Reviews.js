@@ -2,6 +2,8 @@ import Image from 'next/image'
 import styled from '../styles/Reviews.module.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation } from "swiper/modules";
+import { useRef } from "react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -22,30 +24,48 @@ const reviews = [
 
 
 export const Reviews = () => { 
-
+const swiperRef = useRef(null);
 
     return (
       
         <section className={styled.reviews_container}>
             <div className={styled.container}>
                 <h3 className={styled.title}>Відгуки моїх учнів</h3>
-                <div >
+          <div className={styled.wrapper_content} >
+
+            <Image className={styled.visible} src="/images/reviews/5305297350963506609 1.png" width={320} height={255} alt="reviews" />
                     <Swiper
                     className={styled.swiper_container}
-                   
+                     onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+              }}
+
+                    injectStyles={{
+          '.swiper-button-next, .swiper-button-prev': {
+          backgroundColor: 'white',
+          padding: '8px 16px',
+          borderRadius: '100%',
+          border: '2px solid black',
+          color: 'red',
+        },
+              }}
+                    modules={[Autoplay,Navigation]}
                     pagination
                     spaceBetween={50}
                     slidesPerView={1}
-                    autoplay={{ delay: 1000 }}
+                    autoplay={{ delay: 2000 }}
                     >
                 {reviews.map((review) => (
                 <SwiperSlide key={review.id}>
-                        <Image src={`/images/reviews/${review.photoFilename}`} alt={review.title} width={272} height={172} />
+                        <Image className={styled.swiper_img} src={`/images/reviews/${review.photoFilename}`} alt={review.title} width={272} height={172} />
                        
          
         </SwiperSlide>
       ))}
-    </Swiper>
+            </Swiper>
+             <button type='button' onClick={() => swiperRef.current.slideNext()} className={styled.navigationBtn}>
+      <Image src='/arrow-rigth.svg' width={60} height={102} alt='arrow left icon' />
+      </button>
                     
                 </div>
                   <a target="_blank" href='https://t.me/Maria_09_07' className={styled.btn}>Купити курс</a>

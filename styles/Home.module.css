@@ -1,3 +1,15 @@
+.desctopVisible {
+display: none
+}
+
+@media (min-width:768px) {
+  .desctopVisible {
+display: block
+}
+}
+
+
+
 .main {
   display: flex;
   flex-direction: column;
