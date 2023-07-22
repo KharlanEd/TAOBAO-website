@@ -28,7 +28,7 @@ const swiperRef = useRef(null);
 
     return (
       
-        <section className={styled.reviews_container}>
+        <section id='reviews' className={styled.reviews_container}>
             <div className={styled.container}>
                 <h3 className={styled.title}>Відгуки моїх учнів</h3>
           <div className={styled.wrapper_content} >
