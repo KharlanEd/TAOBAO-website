@@ -1,23 +1,32 @@
-@media (max-width: 1280px) {
+@media (max-width: 768px) {
   .header {
 
   display: none;
 }
   }
+@media(min-width:768px){
+  .header{
+    max-width: 768px;
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
 
-.nav{
+    padding-left: 90px;
+    
+  }
+  .nav{
   display: flex;
-  gap: 92px;
-  padding-left: 90px;
-  padding-top: 44px;
+  gap: 72px;
+  padding-left: 15px;
+  padding-top: 34px;
 
 }
 
 .heder_link {
     position: relative;
   display: flex;
-  width: 170px;
-  height: 60px;
+  width: 130px;
+  height: 50px;
   cursor: pointer;
   background: transparent;
 
@@ -31,6 +40,7 @@
   position: absolute;
   left: 0;
   top: 0;
+
   fill: none;
   stroke: #d563bf;
   stroke-dasharray: 150 480;
@@ -58,7 +68,7 @@
 color: var(--pink-light-pink);
 
 font-family: Philosopher;
-font-size: 32px;
+font-size: 22px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -68,3 +78,64 @@ line-height: normal;
     font-weight: bold;
     transition: 1s ease-in-out;
 }
+
+
+
+}
+
+
+@media (min-width:1280px) {
+  .header{
+    max-width: 1280px;
+     margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+
+    
+  }
+ .nav{
+  display: flex;
+  gap: 92px;
+ 
+  padding-top: 44px;
+
+} 
+
+
+.heder_link {
+    position: relative;
+  display: flex;
+  width: 170px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+
+  
+  
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+
+
+.heder_link span {
+ 
+  text-align: center;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+
+color: var(--pink-light-pink);
+
+font-family: Philosopher;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ 
+}
+
+
+
+}
+

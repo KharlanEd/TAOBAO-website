@@ -1,4 +1,6 @@
-
+.visible{
+    display: none;
+}
 .reviews_container{
    background: linear-gradient(180deg, #F88 0%, rgba(241, 96, 96, 0.00) 100%);
 
@@ -61,4 +63,50 @@ background: var(--pink-light-pink, #FFCACA);
 /* glow */
 box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
 
+}
+
+@media (min-width:768px) {
+    .visible{
+    display: block;
+}
+
+.btn{
+    display: none;
+}
+
+.title{
+    margin-bottom: 58px;
+    padding-top: 60px;
+    font-size: 48px;
+}
+
+.reviews_container{
+  
+
+    margin-bottom: 90px;
+}
+
+.container {
+    max-width: 768px;
+    
+}
+    .wrapper_content{
+        display: flex;
+        gap: 44px;
+        align-items: center;
+    
+    }
+}
+
+@media (min-width:1280px) {
+    .swiper_container{
+       width: 451px;
+        height: 285px;
+    }
+
+   .swiper_img{
+    width: 451px;
+    height: 285px;
+   } 
+    
 }

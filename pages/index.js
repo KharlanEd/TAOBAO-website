@@ -15,6 +15,7 @@ import { Reviews } from "@/components/Reviews";
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
 import { ProductCourusel } from "@/components/ProductSection";
+import { HeroDesktop } from "@/components/HeroDesktop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,9 @@ export default function Home() {
         <Header />
         <Hero />
       </Container>
+      <div className={styles.desctopVisible}>
+        <HeroDesktop/>
+      </div>
 
       <AboutDesktop />
       <ServicesSection />

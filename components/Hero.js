@@ -7,7 +7,8 @@ import Image from "next/image"
      return (
          <>
             <section className={styled.section_hero}>
-                <div className={styled.container}>
+                 <div className={styled.container}>
+                     <div className={styled.visibility}>
                     <div >
                         <h1 className={styled.title}>
                              Хочеш купувати бренди дешевше ніж в Україні? Тоді тобі точно сюди !
@@ -29,7 +30,7 @@ import Image from "next/image"
                         
                      </div>
 
-                   
+                  
                     
 
                  
@@ -43,13 +44,23 @@ import Image from "next/image"
                              target="_blank"
                              rel="noopener"
                              href="https://instagram.com/maria__yatsenko?igshid=Y2IzZGU1MTFhOQ==" >@maria__yatsenko</a>
+                         </div>
                      </div>
-                     </div>
+                    <div className={styled.container_text_desktop}>
+                        <h1 className={styled.title_desktop}>
+                             Хочеш купувати бренди дешевше ніж в Україні? 
+                         </h1> 
+                         <h3 className={styled.text_desktop}>Тоді тобі точно сюди !</h3>
+                        <a target="_blank" href='https://t.me/Maria_09_07' className={styled.btn_desktop}>Купити курс</a>
+                    </div>
+
+                 </div>
+                 
+               
                     
             </section>
             
-                 
-                    
+           
                     
                 
             </>
