@@ -6,7 +6,7 @@ export const HeroDesktop = () => {
 
     return (
         
-        <section className={styled.container}>
+        <section id="hero"  className={styled.container}>
              <div className={styled.svg_container} >
                          <Image className={styled.svg} src="/images/product/heloo.svg" alt="Logo" width={229} height={113} />
                          <span className={styled.textsvg}>Привіт</span>
@@ -14,12 +14,12 @@ export const HeroDesktop = () => {
             <div className={styled.container_content}>
                 <Image className={styled.img} src="/images/product/mary_hero.jpg" width={342} height={530} alt="mary" />
                 <div>
-                    <p className={styled.text}>На звʼязку Марія! 
+                    <p  className={styled.text}>На звʼязку Марія! 
                         Вже більше року я працюю з Китаєм та маю власний магазин жіночого одягу. 
                     </p>
                     <p className={styled.text}>Веду власну сторінку в інстаграм, де розповідаю про шопінг в Китаї та ділюсь різними фішками 
                     </p>
-                    <div className={styled.link_wrapper}>
+                    <div  className={styled.link_wrapper}>
                         <a
                              target="_blank"
                              rel="noopener"

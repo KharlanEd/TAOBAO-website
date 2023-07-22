@@ -10,7 +10,7 @@ import { servicesList } from "@/data/servicesList";
 
 export const ServicesSection = () => {
   return (
-    <section className={styles.container}>
+    <section id="services" className={styles.container}>
       <div className={styles.paddingWrapper}>
         <div className={styles.mobTablet}>
           <h2 className={styles.title}>TAOBAO /1688/ Pinduoduo/ WeChat</h2>

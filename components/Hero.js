@@ -6,7 +6,7 @@ import Image from "next/image"
 
      return (
          <>
-            <section className={styled.section_hero}>
+            <section  className={styled.section_hero}>
                  <div className={styled.container}>
                      <div className={styled.visibility}>
                     <div >

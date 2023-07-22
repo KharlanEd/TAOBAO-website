@@ -18,7 +18,7 @@ export const AboutDesktop = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section id="about" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.wrap}>
           <h2 className={styles.title}>TAOBAO | 1688 | Pinduoduo | WeChat </h2>
