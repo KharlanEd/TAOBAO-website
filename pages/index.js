@@ -7,7 +7,7 @@ import { AboutCourses } from "@/components/AboutCourses";
 
 import { Hero } from "@/components/Hero";
 
-// import { AboutDesktop } from "@/components/AboutDesktop";
+import { AboutDesktop } from "@/components/AboutDesktop";
 import { ServicesSection } from "@/components/ServicesSection";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
@@ -37,7 +37,7 @@ export default function Home() {
         <HeroDesktop/>
       </div>
 
-      {/* <AboutDesktop /> */}
+      <AboutDesktop />
       <ServicesSection />
       <About />
       <AboutCourses />
