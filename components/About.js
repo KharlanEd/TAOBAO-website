@@ -78,7 +78,7 @@ export const About = () => {
         )}
         <h2 className={styles.title}>Що входить у навчання ?</h2>
         <div className={styles.wrap}>
-          <ul>
+          <ul className={styles.wrapper}>
             <li className={styles.list}>
               <span className={styles.list_span}>01</span>
               Покрокові відеоуроки у записі
