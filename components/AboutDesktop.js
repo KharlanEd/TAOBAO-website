@@ -29,17 +29,14 @@ export const AboutDesktop = () => {
           <button type="button" onClick={onBtnClick} className={styles.btn}>
             Детальніше про платформи
             <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
               xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="3"
-              stroke="currentColor"
-              className="w-9 h-9 ml-4"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                d="M24 30.75L12 18.75L14.15 16.6L24 26.5L33.85 16.65L36 18.8L24 30.75Z"
+                fill="#FFFFFF"
               />
             </svg>
           </button>
