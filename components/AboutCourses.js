@@ -1,7 +1,8 @@
-import { Sw } from "./Swiper";
+// import { Sw } from "./Swiper";
 import style from "../styles/AboutCourses.module.css";
 import screemshotImg from "../public/images/screenshot_tel.jpg";
 import screemshotRetinaImg from "../public/images/screenshot_tel@2x.jpg";
+// import Image from "next/image";
 
 export const AboutCourses = () => {
   return (
@@ -37,7 +38,7 @@ export const AboutCourses = () => {
             className={style.img}
             srcSet={`${screemshotImg.src} 1x, ${screemshotRetinaImg.src} 2x`}
             src={screemshotImg}
-            alt="phone"
+            alt="phone-display-screenshot"
           />
         </div>
       </div>
