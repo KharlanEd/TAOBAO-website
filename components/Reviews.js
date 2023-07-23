@@ -13,11 +13,11 @@ import 'swiper/css/autoplay';
 const reviews = [
   { id: 1, photoFilename: 'Rectangle5.jpg' },
   { id: 2, photoFilename: 'Rectangle6.jpg' },
-    { id: 3, photoFilename: 'Rectangle31.jpg' },
-    { id: 4, photoFilename: 'Rectangle1.jpg'},
-    { id: 5, photoFilename: 'Rectangle2.jpg' },
-    { id: 6, photoFilename: 'Rectangle3.jpg' },
-    { id: 7, photoFilename: 'IMG_2953.jpg' },
+  { id: 3, photoFilename: 'Rectangle31.jpg' },
+  { id: 4, photoFilename: 'Rectangle1.jpg'},
+  { id: 5, photoFilename: 'Rectangle2.jpg' },
+  { id: 6, photoFilename: 'Rectangle3.jpg' },
+  { id: 7, photoFilename: 'IMG_2953.jpg' },
   { id: 8, photoFilename: 'IMG_2954.jpg'},
   
 ];
@@ -33,7 +33,7 @@ const swiperRef = useRef(null);
                 <h3 className={styled.title}>Відгуки моїх учнів</h3>
           <div className={styled.wrapper_content} >
 
-            <Image className={styled.visible} src="/images/reviews/5305297350963506609 1.png" width={320} height={255} alt="reviews" />
+            <Image className={styled.visible} src="/images/reviews/5305.png" width={320} height={255} alt="reviews" />
                     <Swiper
                     className={styled.swiper_container}
                      onSwiper={(swiper) => {
