@@ -56,7 +56,7 @@ const swiperRef = useRef(null);
                     autoplay={{ delay: 2000 }}
                     >
                 {reviews.map((review) => (
-                <SwiperSlide key={review.id}>
+                <SwiperSlide className={styled.sw_slide} key={review.id}>
                         <Image className={styled.swiper_img} src={`/images/reviews/${review.photoFilename}`} alt={review.title} width={272} height={172} />
                        
          
