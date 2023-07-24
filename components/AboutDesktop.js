@@ -26,47 +26,64 @@ export const AboutDesktop = () => {
             Мій курс вже пройшли 100+ учнів, та більшість вже відкрили <br />{" "}
             свої магазини
           </p>
-          <button type="button" onClick={onBtnClick} className={styles.btn}>
-            Детальніше про платформи
-            <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M24 30.75L12 18.75L14.15 16.6L24 26.5L33.85 16.65L36 18.8L24 30.75Z"
-                fill="#FFFFFF"
-              />
-            </svg>
-          </button>
-          {showModal && (
-            <ul className={styles.btn_list}>
-              <li className={styles.btn_list__item}>
-                <h3 className={styles.list_title__first}>Taobao</h3>
-                <p className={styles.btn_list__text}>
-                  Платформа розрахована на внутрішній ринок Китаю. Тому ціни тут
-                  в 5 - 10 разів менше, ніж в Україні, навіть враховуючи платну
-                  доставку. Знайти можна все: одяг, іграшки, взуття,
-                  електроніку, все для машин, посуд і т.д.
-                </p>
-              </li>
-              <li className={styles.btn_list__item}>
-                <h3 className={styles.btn_list__title}>1688</h3>
-                <p className={styles.btn_list__text}>
-                  Це оптовий сайт і залежить він напряму від Таобао. Ціни тут
-                  нижче, але купувати потрібно від 2-3х одиниць.
-                </p>
-              </li>
-              <li>
-                <h3 className={styles.btn_list__title}>Pinduoduo</h3>
-                <p className={styles.btn_list__text}>
-                  Торговий майданчик, який поки не такий популярний у нас, як
-                  Таобао. Але саме тут можна знайти ті ж товари, навіть дешевше!
-                  А також безліч недорогих реплік (від 100 грн).
-                </p>
-              </li>
-            </ul>
+          {!showModal ? (
+            <button type="button" onClick={onBtnClick} className={styles.btn}>
+              Детальніше про платформи
+              <svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M24 30.75L12 18.75L14.15 16.6L24 26.5L33.85 16.65L36 18.8L24 30.75Z"
+                  fill="#FFFFFF"
+                />
+              </svg>
+            </button>
+          ) : (
+            <div className={styles.section_btn}>
+              <button type="button" onClick={onBtnClick} className={styles.btn}>
+                Детальніше про платформи
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M24 30.75L12 18.75L14.15 16.6L24 26.5L33.85 16.65L36 18.8L24 30.75Z"
+                    fill="#FFFFFF"
+                  />
+                </svg>
+              </button>
+              <ul className={styles.btn_list}>
+                <li className={styles.btn_list__item}>
+                  <h3 className={styles.list_title__first}>Taobao</h3>
+                  <p className={styles.btn_list__text}>
+                    Платформа розрахована на внутрішній ринок Китаю. Тому ціни
+                    тут в 5 - 10 разів менше, ніж в Україні, навіть враховуючи
+                    платну доставку. Знайти можна все: одяг, іграшки, взуття,
+                    електроніку, все для машин, посуд і т.д.
+                  </p>
+                </li>
+                <li className={styles.btn_list__item}>
+                  <h3 className={styles.btn_list__title}>1688</h3>
+                  <p className={styles.btn_list__text}>
+                    Це оптовий сайт і залежить він напряму від Таобао. Ціни тут
+                    нижче, але купувати потрібно від 2-3х одиниць.
+                  </p>
+                </li>
+                <li>
+                  <h3 className={styles.btn_list__title}>Pinduoduo</h3>
+                  <p className={styles.btn_list__text}>
+                    Торговий майданчик, який поки не такий популярний у нас, як
+                    Таобао. Але саме тут можна знайти ті ж товари, навіть
+                    дешевше! А також безліч недорогих реплік (від 100 грн).
+                  </p>
+                </li>
+              </ul>
+            </div>
           )}
         </div>
         <div className={styles.wrapper}>
