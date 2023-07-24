@@ -129,7 +129,7 @@ export const ServicesSection = () => {
             Купити
           </a>
         </div>
-        <div className={styles.desktop}>
+        <div className={styles.desktopBtn}>
           <a
             href="https://t.me/Maria_09_07"
             target="_blank"
