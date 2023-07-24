@@ -109,10 +109,12 @@ export const About = () => {
             </ul>
           </div>
         </div>
-        <h3 className={styles.title_text}>
-          Ви ні до кого не привʼязуєтесь і проходите у своєму темпі! <br />
-          Доступ залишається назавжди!
-        </h3>
+        <div className={styles.desktop}>
+          <h3 className={styles.title_text}>
+            Ви ні до кого не привʼязуєтесь і проходите у своєму темпі! <br />
+            Доступ залишається назавжди!
+          </h3>
+        </div>
       </div>
     </section>
   );

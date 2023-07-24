@@ -1,126 +1,99 @@
-.visible{
-    display: none;
+.visible {
+  display: none;
 }
-.navigationBtn{
-    display: none;
+.navigationBtn {
+  display: none;
 }
-.reviews_container{
-   background: linear-gradient(180deg, #F88 0%, rgba(241, 96, 96, 0.00) 100%);
+.reviews_container {
+  background: linear-gradient(180deg, #f88 0%, rgba(241, 96, 96, 0) 100%);
 
-    margin-bottom: 32px;
+  padding-bottom: 16px;
 }
 
 .container {
-    max-width: 375px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
 
-    padding-left: 16px;
-    padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
-    text-align: center;
+  text-align: center;
 }
 
-.title{
-padding-top: 12px;
-color: #FFF;
-text-align: center;
+.title {
+  padding-top: 12px;
+  color: #fff;
+  text-align: center;
 
-
-font-family: Philosopher;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  font-family: Philosopher;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
-.swiper_container{
-    width: 273px;
-height: 172px;
+.swiper_container {
+  width: 273px;
+  height: 172px;
 
-border-radius: 24px;
-background: #FBFBFB;
+  border-radius: 24px;
+  background: #fbfbfb;
 }
 
-.btn{
-width: 156px;
-height: 48px;
-
-font-family: Philosopher;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-
-padding: 12px;
-
-border-radius: 24px;
-border: 1px solid var(--buttom, #FFF);
-background: var(--pink-light-pink, #FFCACA);
-
-/* glow */
-box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.50);
-
-}
-
-@media (min-width:768px) {
-    .visible{
+@media (min-width: 768px) {
+  .visible {
     display: block;
-}
+  }
 
-.sw_slide{
+  .sw_slide {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.navigationBtn{
+  }
+  .navigationBtn {
     display: block;
-}
+  }
 
-.btn{
+  .btn {
     display: none;
-}
+  }
 
-.title{
+  .title {
     margin-bottom: 58px;
     padding-top: 60px;
     font-size: 48px;
-}
+  }
 
-.reviews_container{
-  
+  .reviews_container {
+    padding-bottom: 90px;
+  }
 
-    margin-bottom: 90px;
-}
-
-.container {
+  .container {
     max-width: 768px;
-    
-}
-    .wrapper_content{
-        display: flex;
-        gap: 44px;
-        align-items: center;
-    
-    }
+  }
+  .wrapper_content {
+    display: flex;
+    gap: 44px;
+    align-items: center;
+  }
 }
 
-@media (min-width:1280px) {
-    .swiper_container{
-       width: 451px;
-        height: 285px;
-        display: flex;
-       align-items: center;
-    }
+@media (min-width: 1280px) {
+  .swiper_container {
+    width: 451px;
+    height: 285px;
+    display: flex;
+    align-items: center;
+  }
 
-   .swiper_img{
+  .swiper_img {
     width: 273px;
     height: 172px;
-   } 
-    
+  }
 }
