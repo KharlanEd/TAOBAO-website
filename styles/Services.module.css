@@ -208,6 +208,10 @@
     display: none;
   }
 
+  .desktopBtn {
+    display: none;
+  }
+
   .desktopWrap {
     display: none;
   }
