@@ -119,14 +119,26 @@ export const ServicesSection = () => {
       </div>
 
       <div className={styles.paddingWrapper}>
-        <a
-          href="https://t.me/Maria_09_07"
-          target="_blank"
-          rel="noopener"
-          className={styles.btnBuy}
-        >
-          Купити
-        </a>
+        <div className={styles.mobTablet}>
+          <a
+            href="https://t.me/Maria_09_07"
+            target="_blank"
+            rel="noopener"
+            className={styles.btnBuy}
+          >
+            Купити
+          </a>
+        </div>
+        <div className={styles.desktop}>
+          <a
+            href="https://t.me/Maria_09_07"
+            target="_blank"
+            rel="noopener"
+            className={styles.btnBuy}
+          >
+            Купити курс
+          </a>
+        </div>
       </div>
     </section>
   );
