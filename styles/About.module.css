@@ -75,6 +75,14 @@
   margin-bottom: 16px;
 }
 
+.title_list_inside {
+  font-family: "Philosopher", sans-serif;
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 .title_list {
   font-family: "Philosopher", sans-serif;
   color: var(--white);
@@ -272,8 +280,14 @@
     margin-bottom: 80px;
   }
 
+  .title_list_inside {
+    margin-bottom: 28px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
   .title_list {
-    margin-bottom: 36px;
+    margin-bottom: 46px;
     font-size: 32px;
     font-weight: 400;
   }
@@ -295,37 +309,19 @@
   }
 
   .list_wrap::before {
-    /* position: absolute; */
     top: -55%;
     right: 290%;
 
-    /* content: "";
-    display: block; */
-
     width: 118px;
     height: 118px;
-
-    /* border-radius: 50%;
-    border: 2px solid rgba(252, 163, 163, 0.5);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
-    z-index: -1; */
   }
 
   .list_wrap::after {
-    /* position: absolute; */
     top: 20%;
     right: 260%;
 
-    /* content: "";
-    display: block; */
-
     width: 118px;
     height: 118px;
-
-    /* border-radius: 50%;
-    border: 2px solid rgba(252, 163, 163, 0.5);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
-    z-index: -1; */
   }
 
   .wrap_text__margin {
@@ -348,48 +344,30 @@
   .title_text {
     font-size: 24px;
     width: 404px;
-    margin-left: 210px;
+    margin-left: 175px;
   }
 
   .wrap {
     display: flex;
     gap: 64px;
     justify-content: center;
-    margin-bottom: 68px;
+    margin-bottom: 28px;
   }
 
   .wrap::before {
-    /* position: absolute; */
-    top: 43%;
+    top: 33%;
     right: 5%;
-
-    /* content: "";
-    display: block; */
 
     width: 44px;
     height: 44px;
-
-    /* border-radius: 50%;
-    border: 2px solid rgba(252, 163, 163, 0.5);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
-    z-index: -1; */
   }
 
   .wrap::after {
-    /* position: absolute; */
-    top: 55%;
+    top: 41%;
     right: -5%;
-
-    /* content: "";
-    display: block; */
 
     width: 118px;
     height: 118px;
-
-    /* border-radius: 50%;
-    border: 2px solid rgba(252, 163, 163, 0.5);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
-    z-index: -1; */
   }
 
   .wrapper {
@@ -401,20 +379,11 @@
   }
 
   .wrapper::after {
-    /* position: absolute; */
-    top: 127%;
+    top: 117%;
     right: 90%;
-
-    /* content: "";
-    display: block; */
 
     width: 118px;
     height: 118px;
-
-    /* border-radius: 50%;
-    border: 2px solid rgba(252, 163, 163, 0.5);
-    box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
-    z-index: -1; */
   }
 
   .desktop {
