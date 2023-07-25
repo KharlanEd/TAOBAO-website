@@ -228,7 +228,7 @@
     height: 126px;
 
     border-radius: 50%;
-    border: 1px solid rgba(252, 163, 163, 0.5);
+    border: 2px solid rgba(252, 163, 163, 0.5);
     box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
     z-index: -1;
   }
@@ -245,7 +245,7 @@
     height: 34px;
 
     border-radius: 50%;
-    border: 1px solid rgba(252, 163, 163, 0.5);
+    border: 2px solid rgba(252, 163, 163, 0.5);
     box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
     z-index: -1;
   }
@@ -262,7 +262,7 @@
     height: 66px;
 
     border-radius: 50%;
-    border: 1px solid rgba(252, 163, 163, 0.5);
+    border: 2px solid rgba(252, 163, 163, 0.5);
     box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
     z-index: -1;
   }
@@ -279,7 +279,7 @@
     height: 118px;
 
     border-radius: 50%;
-    border: 1px solid rgba(252, 163, 163, 0.5);
+    border: 2px solid rgba(252, 163, 163, 0.5);
     box-shadow: 0px 0px 21px 11px rgba(241, 96, 96, 0.5);
     z-index: -1;
   }
@@ -428,7 +428,7 @@
   }
 
   .slideCardDescr {
-    font-family: 'Philosopher', sans-serif;
+    font-family: "Philosopher", sans-serif;
     font-size: 20px;
     font-weight: 400;
   }
