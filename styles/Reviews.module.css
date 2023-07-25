@@ -39,12 +39,17 @@
 }
 
 .swiper_container {
-  width: 273px;
+  width: 272px;
   height: 172px;
 
   border-radius: 24px;
   background: #fbfbfb;
 }
+
+.swiper_img {
+    width: 272px;
+    height: 100%;
+  }
 
 @media (min-width: 768px) {
   .visible {
