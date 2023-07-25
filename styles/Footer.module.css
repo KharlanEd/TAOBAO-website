@@ -2,7 +2,8 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-
+  overflow: hidden;
+  padding-top: 16px;
   padding-bottom: 28px;
 }
 
@@ -47,8 +48,8 @@
   content: "";
   display: block;
 
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 64px;
 
   border-radius: 50%;
   border: 2px solid rgba(252, 163, 163, 0.5);
@@ -64,13 +65,12 @@
 
 .wrapper::before {
   position: absolute;
-  top: -30px;
-  right: 0;
+  top: -8%;
+  right: -10%;
   overflow: hidden;
 
   content: "";
   display: block;
-  overflow: hidden;
 
   width: 118px;
   height: 118px;
@@ -102,6 +102,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-top: 91px;
     padding-bottom: 80px;
   }
 
@@ -126,8 +127,11 @@
   }
 
   .wrapper {
-    position: static;
     gap: 15px;
+  }
+
+  .wrapper::before {
+    display: none;
   }
 
   .title {

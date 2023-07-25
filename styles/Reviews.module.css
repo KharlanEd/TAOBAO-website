@@ -6,8 +6,6 @@
 }
 .reviews_container {
   background: linear-gradient(180deg, #f88 0%, rgba(241, 96, 96, 0) 100%);
-
-  padding-bottom: 16px;
 }
 
 .container {
@@ -73,10 +71,6 @@
     margin-bottom: 58px;
     padding-top: 60px;
     font-size: 48px;
-  }
-
-  .reviews_container {
-    padding-bottom: 90px;
   }
 
   .container {
