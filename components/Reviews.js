@@ -10,14 +10,14 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 const reviews = [
-  { id: 1, photoFilename: "Rectangle5.jpg" },
-  { id: 2, photoFilename: "Rectangle6.jpg" },
-  { id: 3, photoFilename: "Rectangle31.jpg" },
-  { id: 4, photoFilename: "Rectangle1.jpg" },
-  { id: 5, photoFilename: "Rectangle2.jpg" },
-  { id: 6, photoFilename: "Rectangle3.jpg" },
-  { id: 7, photoFilename: "IMG_2953.jpg" },
-  { id: 8, photoFilename: "IMG_2954.jpg" },
+  { id: 1, photoFilename: "IMG_3633.PNG" ,width: 300, height: 767},
+  { id: 2, photoFilename: "IMG_3634.PNG" ,width: 300, height: 469},
+  { id: 3, photoFilename: "IMG_3636.PNG" ,width: 300, height: 552},
+  { id: 4, photoFilename: "IMG_3637.PNG" ,width: 300, height: 270},
+  { id: 5, photoFilename: "Rectangle2.jpg" ,width: 300, height: 173},
+  { id: 6, photoFilename: "Rectangle3.jpg" ,width: 300, height: 172},
+  { id: 7, photoFilename: "IMG_3650.PNG" ,width: 300, height: 582},
+  { id: 8, photoFilename: "IMG_2954.jpg" ,width: 300, height: 220},
 ];
 
 export const Reviews = () => {
@@ -61,8 +61,7 @@ export const Reviews = () => {
                   className={styled.swiper_img}
                   src={`/images/reviews/${review.photoFilename}`}
                   alt={review.title}
-                  width={272}
-                  height={172}
+                  width={review.width} height={review.height}
                 />
               </SwiperSlide>
             ))}

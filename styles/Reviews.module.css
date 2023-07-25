@@ -37,12 +37,21 @@
 }
 
 .swiper_container {
-  width: 273px;
-  height: 172px;
+  width: 272px;
+  height: 300px;
 
   border-radius: 24px;
   background: #fbfbfb;
 }
+.sw_slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+/* .swiper_img {
+    width: 272px;
+    height: 100%;
+  } */
 
 @media (min-width: 768px) {
   .visible {
@@ -81,13 +90,13 @@
 @media (min-width: 1280px) {
   .swiper_container {
     width: 451px;
-    height: 285px;
+    height: 300px;
     display: flex;
     align-items: center;
   }
 
-  .swiper_img {
+  /* .swiper_img {
     width: 273px;
     height: 172px;
-  }
+  } */
 }
