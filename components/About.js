@@ -89,9 +89,16 @@ export const About = () => {
               <span className={styles.list_span}>04</span>
               Доступ до чату з учнями, де ділимося досвідом та ін.
             </li>
-            <h2 className={styles.title_list}>Тариф зі зворотнім зв’язком</h2>
             <li className={styles.list}>
-              <span className={styles.list_span}>05</span>
+              <span className={styles.list_span}>05</span>6 різних перевізників
+              (різна швидкість доставки, тарифи, перевезення копій і брендів без
+              обмежень)
+            </li>
+            <h2 className={styles.title_list_inside}>
+              Тариф зі зворотнім зв’язком
+            </h2>
+            <li className={styles.list}>
+              <span className={styles.list_span}>06</span>
               Зворотній звʼязок зі мною без обмежень, якщо виникли питання /
               складності
             </li>
@@ -100,8 +107,8 @@ export const About = () => {
             <h2 className={styles.title_list}>Бонуси</h2>
             <ul className={styles.list_wrap}>
               <li className={styles.wrap_text__margin}>
-                6 різних перевізників <br /> (різна швидкість доставки, тарифи,
-                перевезення копій і брендів без обмежень)
+                урок з сайтом оригінальної корейської косметики ,якого немає в
+                вільному доступі
               </li>
               <li className={styles.wrap_text}>
                 телеграм канал з посиланнями на перевірених продавців
