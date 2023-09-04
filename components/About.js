@@ -90,7 +90,7 @@ export const About = () => {
               Доступ до чату з учнями, де ділимося досвідом та ін.
             </li>
             <li className={styles.list}>
-              <span className={styles.list_span}>05</span>6 різних перевізників
+              <span className={styles.list_span}>05</span>8 різних перевізників
               (різна швидкість доставки, тарифи, перевезення копій і брендів без
               обмежень)
             </li>
