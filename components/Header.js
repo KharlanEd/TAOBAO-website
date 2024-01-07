@@ -43,31 +43,31 @@ return () => {
       <nav className={styled.nav}>
              <a href='#hero' className={styled.heder_link}>
         <svg width="100%" height="50px" viewBox="0 0 180 60" className={styled.svg}>
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>Про мене</span>
       </a>
             <a href='#about' className={styled.heder_link}>
         <svg width="100%" height="50px" viewBox="0 0 180 60" className={styled.svg}>
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>Курс</span>
         </a>
         
             <a href='#services' className={styled.heder_link}>
         <svg width="100%" height="50px" viewBox="0 0 180 60" className={styled.svg}>
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>Тарифи</span>
         </a>
 
               <a href='#reviews' className={styled.heder_link}>
         <svg width="100%" height="50px" viewBox="0 0 180 60" className={styled.svg}>
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>Відгуки</span>
       </a>

@@ -21,10 +21,10 @@ export const servicesList = [
     currency: "грн",
   },
    {
-    id: 3,
+    id: 4,
     title: "WeChat",
     price: 2000,
-    priceWithFeedback: 2600,
+    priceWithFeedback: 0,
     currency: "грн",
   },
 ];

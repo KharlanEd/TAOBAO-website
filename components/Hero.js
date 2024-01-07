@@ -43,7 +43,7 @@ import Image from "next/image"
                              className={styled.hero_btn}
                              target="_blank"
                              rel="noopener"
-                             href="https://instagram.com/maria__yatsenko?igshid=Y2IzZGU1MTFhOQ==" >@maria__yatsenko</a>
+                             href="https://www.instagram.com/yatsenko_china?igsh=OGdrMW1rYzdxbWh1" >@maria__yatsenko</a>
                          </div>
                      </div>
                     <div className={styled.container_text_desktop}>

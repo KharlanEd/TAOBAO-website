@@ -102,14 +102,16 @@ export const ServicesSection = () => {
                           className={styles.slideCardPrice}
                         >{`${price} ${currency}`}</p>
                       </li>
-                      <li className={styles.cardPriceInner}>
-                        <p className={styles.slideCardDescr}>
-                          зі зворотнім зв’язком
-                        </p>
-                        <p
-                          className={styles.slideCardPrice}
-                        >{`${priceWithFeedback} ${currency}`}</p>
-                      </li>
+                      {priceWithFeedback !== 0 && (
+                        <li className={styles.cardPriceInner}>
+                          <p className={styles.slideCardDescr}>
+                            зі зворотнім зв’язком
+                          </p>
+                          <p
+                            className={styles.slideCardPrice}
+                          >{`${priceWithFeedback} ${currency}`}</p>
+                        </li>
+                      )}
                     </ul>
                   </div>
                 </SwiperSlide>
